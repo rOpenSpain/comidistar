@@ -18,7 +18,8 @@ Las puntuaciones y datos adicionales sobre los productos de las catas
 fueron transcritos manualmente a partir de los vídeos subidos al canal
 de [YouTube](https://www.youtube.com/channel/UCoIJrrwXy_mlr1WkC4vaTnA)
 de El Comidista. La documentación del paquete está disponible en este
-link, junto con algunas viñetas y tutoriales.
+[link](https://gongcastro.github.io/comidistar/), junto con algunas
+viñetas y tutoriales.
 
 ## Instalación
 
