@@ -9,5 +9,6 @@
 #'   \item{fecha}{fecha de subida del vídeo a YouTube}
 #'   \item{link}{URL del vídeo}
 #' }
+#' @author Gonzalo Garcia-Castro
 #' @source {\url{https://elcomidista.elpais.com/agr/catas_de_expertos/a}}
 "videos"

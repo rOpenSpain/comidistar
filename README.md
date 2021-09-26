@@ -7,51 +7,34 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/gongcastro/comidistar/workflows/R-CMD-check/badge.svg)](https://github.com/gongcastro/comidistar/actions)
 <!-- badges: end -->
 
-The goal of comidistar is to …
+**comidistar** es un paquete de R que contiene una base de datos con las
+puntuaciones de las catas a ciegas de [El
+Comidista](https://elcomidista.elpais.com/). También contiene algunas
+funciones para trabajar con los datos y visualizarlos más fácilmente.
+Las puntuaciones y datos adicionales sobre los productos de las catas
+fueron transcritos manualmente a partir de los vídeos subidos al canal
+de [YouTube](https://www.youtube.com/channel/UCoIJrrwXy_mlr1WkC4vaTnA)
+de El Comidista. La documentación del paquete está disponible en este
+link, junto con algunas viñetas y tutoriales.
 
-## Installation
+## Instalación
 
-You can install the released version of comidistar from
-[CRAN](https://CRAN.R-project.org) with:
+Puedes instalar comidistar ejecutando el siguiente código:
 
 ``` r
-install.packages("comidistar")
+# podrías necesitar instalar el paquete devtools primero
+# install.packages("devtools")
+devtools::install_github("gongcastro/comidistar")
 ```
 
-## Example
+## Ejemplo
 
-This is a basic example which shows you how to solve a common problem:
+Puedes cargar la base de datos como un *data frame* así:
 
 ``` r
 library(comidistar)
-## basic example code
+data("puntuaciones")
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.

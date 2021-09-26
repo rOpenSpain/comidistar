@@ -1,0 +1,81 @@
+---
+title: "Visualizando las puntuaciones"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Visualizando las puntuaciones}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(warning = FALSE)
+library(comidistar) # contiene los datos y funciones ayudantes
+library(dplyr) # para manejar los datos en formato tidy
+library(ggplot2) # para visualizar los datos
+library(ggdist) # geoms extra para visualizar las distribuciones
+```
+
+En esta viñeta visualizaremos las puntuaciones de las catas a ciegas de El Comidista. En cada una de estas catas--disponibles en el canal de [YouTube](https://www.youtube.com/channel/UCoIJrrwXy_mlr1WkC4vaTnA) de El Comidista--se presenta una serie de productos de marcas industriales a una o dos personas expertas en ese tipo de productos. En los vídeos en los que hay más de una persona puntuando los productos, el equipo de edición asigna al producto la media de las puntuaciones que el producto ha recibido. Por motivos educativos, la base de datos disponible muestra las puntuaciones de cada persona en forma individual. Cada vez que se puntúa un producto, se muestra su precio y la unidad sobre el que fue calculado (ej. 10 €). En la base de datos `productos` se muestra el tipo, marca, precio y unidade de medida de cada producto tal y como se muestra en los vídeos.
+
+Así se distribuyen las puntuaciones de cada producto:
+
+```{r puntuaciones, fig.height=7, fig.width=5}
+data("puntuaciones") # cargamos los datos
+
+ggplot(puntuaciones, aes(puntuacion, reorder(producto, -puntuacion))) +
+  geom_vline(xintercept = 5, colour = "grey", size = 1) +
+  stat_pointinterval(size = 0.75) +
+  labs(x = "Puntuaci\u00f3n", y = "Puntuaci\u00f3n", colour = "Intervalo de confianza") +
+  scale_x_continuous(limits = c(-2, 10), labels = as.integer) +
+  scale_colour_brewer(palette = "Oranges") +
+  theme_comidistar() +
+  theme(
+    axis.title.y = element_blank(),
+    legend.position = "top"
+  )
+```
+
+```{r puntuaciones_order, fig.height=8, fig.width=12}
+ggplot(puntuaciones, aes(orden, puntuacion, group = persona)) +
+  facet_wrap(~producto) +
+  geom_hline(yintercept = 5, colour = "grey") +
+  geom_line( size = 0.75) +
+  geom_point(size = 2) +
+  labs(x = "Orden de presentaci\u00f3n", y = "Puntuaci\u00f3n") +
+  scale_y_continuous(limits = c(-2, 10), labels = as.integer) +
+  scale_x_continuous(labels = as.integer, breaks = 0:max(puntuaciones$orden)) +
+  theme_comidistar() +
+  theme(
+    legend.position = "none",
+  )
+
+```
+
+
+```{r puntuaciones_precio, fig.height = 15, fig.width=8}
+puntuaciones_precio <- left_join(puntuaciones, productos) %>% 
+  group_by(producto, marca, precio) %>% 
+  summarise(
+    puntuacion = mean(puntuacion, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+ggplot(puntuaciones_precio, aes(precio, puntuacion, label = marca)) +
+  facet_wrap(~producto, scales = "free_x", ncol = 4) +
+  geom_hline(yintercept = 5, colour = "grey") +
+  geom_text(size = 2) +
+  labs(x = "Precio (€)", y = "Puntuaci\u00f3n", colour = "Producto") +
+  scale_y_continuous(limits = c(-2, 10), labels = as.integer) +
+  theme_comidistar() +
+  theme(
+    legend.position = "none",
+  )
+
+```

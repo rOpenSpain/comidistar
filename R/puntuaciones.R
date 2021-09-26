@@ -16,5 +16,6 @@
 #'   \item{marca}{marca a la que pertenece el producto}
 #'   \item{puntuacion}{puntuación numérica comprendida entre 0 y 10 asignada por la persona del jurado al producto}
 #' }
+#' @author Gonzalo Garcia-Castro
 #' @source {\url{https://elcomidista.elpais.com/agr/catas_de_expertos/a}}
 "puntuaciones"

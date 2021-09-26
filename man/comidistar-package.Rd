@@ -4,9 +4,10 @@
 \name{comidistar-package}
 \alias{comidistar}
 \alias{comidistar-package}
-\title{comidistar: What the Package Does (Title Case)}
+\title{comidistar: Base de datos con las puntuaciones de las catas a ciegas de El Comidista}
 \description{
-More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
+comidistar es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación del paquete está disponible en este link, junto con algunas viñetas y tutoriales.
 }
 \keyword{internal}

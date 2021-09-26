@@ -29,4 +29,7 @@ puntuación de una persona a un producto de una marca específica. Un producto
 puede haber sido puntuado por más de una persona, y por lo tanto el número de
 filas correspondientes a cada producto puede variar considerablemente.
 }
+\author{
+Gonzalo Garcia-Castro
+}
 \keyword{datasets}

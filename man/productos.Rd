@@ -22,4 +22,7 @@ productos
 Incluye datos de cada producto presentado. Cada fila corresponde a un producto
 de una marca diferente.
 }
+\author{
+Gonzalo Garcia-Castro
+}
 \keyword{datasets}
