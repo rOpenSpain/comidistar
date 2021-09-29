@@ -20,10 +20,11 @@ BugReports: https://github.com/gongcastro/comidistar/issues
 Depends: 
     R (>= 2.10)
 Imports: 
+    devtools,
     dplyr,
     ggdist,
-    patchwork,
     ggplot2,
+    patchwork,
     tibble,
 Suggests: 
     here,
