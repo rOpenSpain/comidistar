@@ -20,7 +20,6 @@ BugReports: https://github.com/gongcastro/comidistar/issues
 Depends: 
     R (>= 2.10)
 Imports: 
-    devtools,
     dplyr,
     ggdist,
     ggplot2,
