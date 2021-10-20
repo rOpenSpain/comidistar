@@ -8,6 +8,25 @@
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/gongcastro/comidistar/workflows/R-CMD-check/badge.svg)](https://github.com/gongcastro/comidistar/actions)
+![GitHub top
+language](https://img.shields.io/github/languages/top/gongcastro/comidistar)
+![GitHub repo
+size](https://img.shields.io/github/repo-size/gongcastro/comidistar)
+![GitHub
+issues](https://img.shields.io/github/issues/gongcastro/comidistar)
+![GitHub closed
+issues](https://img.shields.io/github/issues-closed/gongcastro/comidistar)
+![GitHub pull
+requests](https://img.shields.io/github/issues-pr/gongcastro/comidistar)
+![GitHub closed pull
+requests](https://img.shields.io/github/issues-pr-closed/gongcastro/comidistar)
+![GitHub](https://img.shields.io/github/license/gongcastro/comidistar)
+![GitHub R package
+version](https://img.shields.io/github/r-package/v/gongcastro/comidistar)
+![GitHub
+contributors](https://img.shields.io/github/contributors/gongcastro/comidistar)
+![GitHub last
+commit](https://img.shields.io/github/last-commit/gongcastro/comidistar)
 <!-- badges: end -->
 
 **comidistar** es un paquete de R que contiene una base de datos con las
