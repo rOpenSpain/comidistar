@@ -10,13 +10,9 @@
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
 comidistar es un paquete de R que contiene una base de datos
-    con las puntuaciones de las catas a ciegas de El Comidista. También
-    contiene algunas funciones para trabajar con los datos y visualizarlos
-    más fácilmente. Las puntuaciones y datos adicionales sobre los
-    productos de las catas fueron transcritos manualmente a partir de los
-    vídeos subidos al canal de YouTube de El Comidista. La documentación
-    del paquete está disponible en este link, junto con algunas viñetas y
-    tutoriales.
+    con las puntuaciones de las catas a ciegas de El Comidista. Las puntuaciones 
+    y datos adicionales sobre los productos de las catas fueron transcritos 
+    manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista.
 }
 \seealso{
 Useful links:

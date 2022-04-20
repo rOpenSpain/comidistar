@@ -6,13 +6,9 @@ Version: 0.1.0
 Author: Gonzalo Garcia-Castro
 Maintainer: Gonzalo Garcia-Castro <gonzaloggc95@gmail.com>
 Description: comidistar es un paquete de R que contiene una base de datos
-    con las puntuaciones de las catas a ciegas de El Comidista. También
-    contiene algunas funciones para trabajar con los datos y visualizarlos
-    más fácilmente. Las puntuaciones y datos adicionales sobre los
-    productos de las catas fueron transcritos manualmente a partir de los
-    vídeos subidos al canal de YouTube de El Comidista. La documentación
-    del paquete está disponible en este link, junto con algunas viñetas y
-    tutoriales.
+    con las puntuaciones de las catas a ciegas de El Comidista. Las puntuaciones 
+    y datos adicionales sobre los productos de las catas fueron transcritos 
+    manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista.
 License: CC0
 URL: https://gongcastro.github.io/comidistar/,
     https://github.com/gongcastro/comidistar/
@@ -20,17 +16,20 @@ BugReports: https://github.com/gongcastro/comidistar/issues
 Depends: 
     R (>= 2.10)
 Imports: 
+    ggplot2,
+    tibble
+Suggests: 
+    knitr,
+    rmarkdown,
     dplyr,
     ggdist,
-    ggplot2,
-    patchwork,
-    tibble,
-Suggests: 
-    here,
-    knitr,
-    rmarkdown
+    patchwork
 VignetteBuilder: 
-    knitr
+    knitr,
+    dplyr,
+    ggplot2,
+    ggdist,
+    patchwork
 Encoding: UTF-8
 Language: es
 LazyData: true
