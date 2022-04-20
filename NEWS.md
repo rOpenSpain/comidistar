@@ -1,3 +1,14 @@
+# comidistar 0.2.0
+
+## Nuevo contenido
+
+* Añade datos sobre las catas de mozzarella y mantequilla
+
+## Aspectos técnicos
+
+* Elimina las dependencias de {readr} y {here}
+* Datos externos pasan de estar en formato CSV a TSV
+
 # comidistar 0.1.0
 
 
