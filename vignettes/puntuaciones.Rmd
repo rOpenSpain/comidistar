@@ -50,10 +50,19 @@ Por último, visualizamos los datos usando una combinación de ggplot2, ggdist y
 
 
 # distribución general
-ggplot(puntuaciones, aes(puntuacion)) +
+ggplot(puntuaciones) +
+  aes(x = puntuacion) +
   stat_halfeye(aes(fill = stat(cut_cdf_qi(cdf, .width = c(.5, .66, .8, .95))))) +
-  labs(x = "Puntuaci\u00f3n", y = "Densidad", fill = "Cuantil") +
-  scale_fill_brewer(direction = -1, palette = "Oranges", na.translate = FALSE) +
+  labs(
+    x = "Puntuaci\u00f3n",
+    y = "Densidad", 
+    fill = "Cuantil"
+  ) +
+  scale_fill_brewer(
+    direction = -1, 
+    palette = "Oranges",
+    na.translate = FALSE
+  ) +
   theme_comidistar() +
   theme(
     axis.line.x = element_blank(),
@@ -63,23 +72,60 @@ ggplot(puntuaciones, aes(puntuacion)) +
   ) +
   
   # distribución de cada producto
-  ggplot(puntuaciones_agregadas, aes(puntuacion, reorder(producto, puntuacion))) +
-  geom_vline(xintercept = 5, colour = "grey", size = 1) +
-  geom_pointinterval(aes(xmin = .lower, xmax = .upper), size = 2) +
-  geom_point(data = puntuaciones, shape = "|", position = position_nudge(y = 0.16)) +
-  geom_text(aes(x = -2, label = paste0("(", count(puntuaciones, producto)$n, ")")),
-            size = 3, hjust = 0) +
-  labs(x = "Puntuaci\u00f3n", y = "Producto", colour = "Intervalo de confianza") +
+  ggplot(puntuaciones_agregadas) +
+  aes(
+    x = puntuacion,
+    y = reorder(producto, puntuacion)
+  ) + 
+  geom_vline(
+    xintercept = 5, 
+    colour = "grey", 
+    size = 1
+  ) +
+  geom_pointinterval(
+    aes(
+      xmin = .lower, 
+      xmax = .upper
+    ), 
+    size = 2
+  ) +
+  geom_point(
+    data = puntuaciones, 
+    shape = "|", 
+    position = position_nudge(y = 0.16)
+  ) +
+  geom_text(
+    aes(
+      x = -2, 
+      label = paste0("(", count(puntuaciones, producto)$n, ")")
+    ),
+    size = 3, 
+    hjust = 0
+  ) +
+  labs(
+    x = "Puntuaci\u00f3n", 
+    y = "Producto", 
+    colour = "Intervalo de confianza"
+  ) +
   theme_comidistar() +
   
   # juntar los dos gráficos usando patchwork
-  plot_layout(ncol = 1, heights = c(0.12, 0.9)) &
+  plot_layout(
+    ncol = 1,
+    heights = c(0.12, 0.9)
+  ) &
   plot_annotation(tag_levels = "A") &
-  scale_x_continuous(limits = c(-2, 10), labels = as.integer) &
+  scale_x_continuous(
+    limits = c(-2, 10), 
+    labels = as.integer
+  ) &
   theme(
     axis.title.y = element_blank(),
     panel.grid.major.y = element_blank(),
-    panel.grid.major.x = element_line(colour = "grey", linetype = "dotted"),
+    panel.grid.major.x = element_line(
+      colour = "grey",
+      linetype = "dotted"
+    ),
     legend.position = "top"
   )
 ```
