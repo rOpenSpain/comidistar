@@ -1,9 +1,7 @@
-library(here)
-library(readr)
 library(tibble)
 
-productos <- read_csv(here("inst", "extdata", "productos.csv")) %>%
-    as_tibble()
+file_path <- system.file("extdata", "productos.txt", package = "comidistar")
+productos <- as_tibble(read.delim(file_path))
 
 # load data
 usethis::use_data(productos, overwrite = TRUE)

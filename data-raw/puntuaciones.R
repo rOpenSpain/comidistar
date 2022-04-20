@@ -1,9 +1,7 @@
-library(here)
-library(readr)
 library(tibble)
 
-puntuaciones <- read_csv(here("inst", "extdata", "puntuaciones.csv")) %>%
-    as_tibble()
+file_path <- system.file("extdata", "puntuaciones.txt", package = "comidistar")
+puntuaciones <- as_tibble(read.delim(file_path))
 
 # load data
 usethis::use_data(puntuaciones, overwrite = TRUE)

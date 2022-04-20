@@ -1,0 +1,391 @@
+producto	persona	orden	marca	puntuacion
+Yogur	Laia Pont	1	Hacendado (Mercadona)	5
+Yogur	Laia Pont	2	Eroski	5
+Yogur	Laia Pont	3	Milbona (Lidl)	5
+Yogur	Laia Pont	4	Pastoret	6
+Yogur	Laia Pont	5	Aliada (El Corte Inglés)	8
+Yogur	Laia Pont	6	Danone	5
+Yogur	Laia Pont	7	Carrefour	9
+Yogur	Laia Pont	8	Dia	6
+Salsa de tomate	Chiara Bombardi	1	Dia	6
+Salsa de tomate	Chiara Bombardi	2	Orlando	7
+Salsa de tomate	Chiara Bombardi	3	Hida	5
+Salsa de tomate	Chiara Bombardi	4	Hacendado (Mercadona)	8.5
+Salsa de tomate	Chiara Bombardi	5	Alcampo	9.5
+Salsa de tomate	Chiara Bombardi	6	Solis	7.5
+Salsa de tomate	Chiara Bombardi	7	Pedro Luis	3
+Salsa de tomate	Chiara Bombardi	8	El Corte Inglés	6
+Tortilla	Lara Zaballa	1	El Corte Inglés	2
+Tortilla	Lara Zaballa	2	Hacendado (Mercadona)	3
+Tortilla	Lara Zaballa	3	Dia	4
+Tortilla	Lara Zaballa	4	Coren	2
+Tortilla	Lara Zaballa	5	Chef Select (Lidl)	4
+Tortilla	Lara Zaballa	6	Auchan (Alcampo)	2
+Tortilla	Lara Zaballa	7	La cocina de Senén	6
+Tortilla	Lara Zaballa	8	Palacios	5
+Tortilla	Lara Zaballa	9	Eroski	5.5
+Tortilla	María González	1	El Corte Inglés	2
+Tortilla	María González	2	Hacendado (Mercadona)	2.5
+Tortilla	María González	3	Dia	2.5
+Tortilla	María González	4	Coren	2
+Tortilla	María González	5	Chef Select (Lidl)	1
+Tortilla	María González	6	Auchan (Alcampo)	1.5
+Tortilla	María González	7	La cocina de Senén	5.5
+Tortilla	María González	8	Palacios	4
+Tortilla	María González	9	Eroski	4.5
+Café (cápsula)	Kim Ossenblok	1	Nespresso	4
+Café (cápsula)	Kim Ossenblok	2	Fortaleza	2
+Café (cápsula)	Kim Ossenblok	3	Marcilla	2
+Café (cápsula)	Kim Ossenblok	4	Bellarom (Lidl)	5
+Café (cápsula)	Kim Ossenblok	5	Nescafé	5
+Café (cápsula)	Kim Ossenblok	6	Prosol (Mercadona)	3.5
+Café (cápsula)	Kim Ossenblok	7	L'Arome	4
+Café (cápsula)	Kim Ossenblok	8	Carrefour	3
+Café (cápsula)	Kim Ossenblok	9	Carte Noir	5
+Café (molido)	Fraçois Justet	1	Nestlé Bonka	2
+Café (molido)	Fraçois Justet	2	El Corte Inglés	5.5
+Café (molido)	Fraçois Justet	3	Marcilla	2.5
+Café (molido)	Fraçois Justet	4	Saimaza	5
+Café (molido)	Fraçois Justet	5	Lavazza	4.5
+Café (molido)	Fraçois Justet	6	Hacendado (Mercadona)	3.5
+Café (molido)	Fraçois Justet	7	Fortaleza	6.5
+Café (molido)	Fraçois Justet	8	Saula	5
+Café (molido)	Fraçois Justet	9	Carrefour	2
+Salmorejo	Paco Morales	1	El Corte Inglés	5
+Salmorejo	Paco Morales	2	Alvalle	7
+Salmorejo	Paco Morales	3	Santa Teresa	4.5
+Salmorejo	Paco Morales	4	Salteras	7.5
+Salmorejo	Paco Morales	5	Hacendado (Mercadona)	6
+Salmorejo	Paco Morales	6	García Millán (Aldi)	8.5
+Salmorejo	Paco Morales	7	La Despensa	5
+Salmorejo	Paco Morales	8	Don Simón	6
+Hummus	Miguel Katib	1	Argal	4
+Hummus	Miguel Katib	2	Simply (Mercadona)	6
+Hummus	Miguel Katib	3	Vegetalia	0
+Hummus	Miguel Katib	4	Eroski	4
+Hummus	Miguel Katib	5	Chef Select (Lidl)	5
+Hummus	Miguel Katib	6	La Piara	4.5
+Hummus	Miguel Katib	7	Alfez	2
+Hummus	Miguel Katib	8	Casa Morando (Aldi)	4
+Crema de verduras	Xavier Pellicer	1	Ametller	7
+Crema de verduras	Xavier Pellicer	2	Knorr	3
+Crema de verduras	Xavier Pellicer	3	Gvtarra	2
+Crema de verduras	Xavier Pellicer	4	Gallina Blanca	4
+Crema de verduras	Xavier Pellicer	5	Pedro Luis	1
+Crema de verduras	Xavier Pellicer	6	Santa Teresa	2
+Crema de verduras	Xavier Pellicer	7	Carretilla	3
+Crema de verduras	Xavier Pellicer	8	Hacendado (Mercadona)	6
+Panettone	Tonatiuh Cortés	1	Giuseppe (Mercadona)	3
+Panettone	Tonatiuh Cortés	2	Favorita (Lidl)	4
+Panettone	Tonatiuh Cortés	3	Saronno (El Crote Ingles)	4
+Panettone	Tonatiuh Cortés	4	Bauli	2
+Panettone	Tonatiuh Cortés	5	Motta	1.5
+Panettone	Tonatiuh Cortés	6	Tre Marie	2
+Panettone	Tonatiuh Cortés	7	Lacasitos	0
+Panettone	Tonatiuh Cortés	8	Delaviuda	1
+Vermut	Fraçois Monti	1	Yzaguirre	6
+Vermut	Fraçois Monti	2	Cinzano	7
+Vermut	Fraçois Monti	3	Maronti (Mercadona)	5
+Vermut	Fraçois Monti	4	Lacuesta	2
+Vermut	Fraçois Monti	5	Espinaler	3
+Vermut	Fraçois Monti	6	Alvini (Dia)	4
+Vermut	Fraçois Monti	7	Lustau	7
+Vermut	Fraçois Monti	8	Martini	4.5
+Vermut	Fraçois Monti	9	Vernotti	4.75
+Guacamole	Paco Méndez	1	Hacendado (Mercadona)	1.5
+Guacamole	Paco Méndez	2	Soan Fresh (Dia)	4
+Guacamole	Paco Méndez	3	Chef Select (Lidl)	4.5
+Guacamole	Paco Méndez	4	Cantina	1
+Guacamole	Paco Méndez	5	Salssitas	6.5
+Guacamole	Paco Méndez	6	Frudel	5
+Guacamole	Paco Méndez	7	Old El Paso	1.5
+Guacamole	Paco Méndez	8	Fresh Mix	5
+Guacamole	Nancy Migel	1	Hacendado (Mercadona)	2
+Guacamole	Nancy Migel	2	Soan Fresh (Dia)	3
+Guacamole	Nancy Migel	3	Chef Select (Lidl)	5
+Guacamole	Nancy Migel	4	Cantina	1
+Guacamole	Nancy Migel	5	Salssitas	7
+Guacamole	Nancy Migel	6	Frudel	6
+Guacamole	Nancy Migel	7	Old El Paso	1.5
+Guacamole	Nancy Migel	8	Fresh Mix	6
+Macarrones	Nicoletta Acerbi	1	Eroski	3
+Macarrones	Nicoletta Acerbi	2	Gallo	3
+Macarrones	Nicoletta Acerbi	3	Garofalo	7
+Macarrones	Nicoletta Acerbi	4	Barilla	6
+Macarrones	Nicoletta Acerbi	5	Dia	2
+Macarrones	Nicoletta Acerbi	6	Aliada (El Corte Inglés)	5
+Macarrones	Nicoletta Acerbi	7	Hacendado (Mercadona)	5
+Macarrones	Nicoletta Acerbi	8	De Cecco	8
+Macarrones	Nicoletta Acerbi	9	Comino (Lidl)	4
+Pan de molde	Ibán Yarza	1	Bimbo	2
+Pan de molde	Ibán Yarza	2	Panrico	2
+Pan de molde	Ibán Yarza	3	Mercadona	3.5
+Pan de molde	Ibán Yarza	4	Dia	3
+Pan de molde	Ibán Yarza	5	Carrefour	1.5
+Pan de molde	Ibán Yarza	6	Aldi	4
+Pan de molde	Ibán Yarza	7	Eroski	3
+Pan de molde	Ibán Yarza	8	Alcampo	2.5
+Sushi	Hideki Matsuhisa	1	Flete (Aldi)	5
+Sushi	Hideki Matsuhisa	2	Sushita	2.5
+Sushi	Hideki Matsuhisa	3	La Sirena	0.5
+Sushi	Hideki Matsuhisa	4	Carrefour	6
+Sushi	Hideki Matsuhisa	5	Mercadona	3
+Sushi	Hideki Matsuhisa	6	Sushi Take (Caprabo/Eroski)	5.5
+Sushi	Hideki Matsuhisa	7	Sushi Gourmet (Alcampo)	3.5
+Sushi	Hideki Matsuhisa	8	Lidl	1
+Cerveza	Judit Cártex	1	Mahou Clásica	4
+Cerveza	Judit Cártex	2	Estrella Galicia	3
+Cerveza	Judit Cártex	3	Amstel	5
+Cerveza	Judit Cártex	4	Alhambra Tradicional	5
+Cerveza	Judit Cártex	5	Cruzcampo	3
+Cerveza	Judit Cártex	6	Estella Damm	5.5
+Cerveza	Judit Cártex	7	San Miguel	3
+Cerveza	Judit Cártex	8	Ambar	3
+Cerveza	Judit Cártex	9	Heineken	2
+Cerveza	Mikel Rius	1	Mahou Clásica	5
+Cerveza	Mikel Rius	2	Estrella Galicia	4
+Cerveza	Mikel Rius	3	Amstel	6.5
+Cerveza	Mikel Rius	4	Alhambra Tradicional	5
+Cerveza	Mikel Rius	5	Cruzcampo	5
+Cerveza	Mikel Rius	6	Estella Damm	7
+Cerveza	Mikel Rius	7	San Miguel	4
+Cerveza	Mikel Rius	8	Ambar	4
+Cerveza	Mikel Rius	9	Heineken	4
+Gazpacho	Jordi Luque	1	Hacendado (Mercadona)	4.5
+Gazpacho	Jordi Luque	2	Chef Select (Lidl)	2
+Gazpacho	Jordi Luque	3	Carrefour	2.5
+Gazpacho	Jordi Luque	4	Eroski	1
+Gazpacho	Jordi Luque	5	Alvalle	6
+Gazpacho	Jordi Luque	6	El Corte Inglés	4
+Gazpacho	Jordi Luque	7	Santa Teresa	2
+Gazpacho	Jordi Luque	8	Dia	5
+Gazpacho	Jordi Luque	9	Don Simón	5
+Atún de lata	Aleix Clavera	1	Ortiz	7
+Atún de lata	Aleix Clavera	2	Consorcio	5
+Atún de lata	Aleix Clavera	3	Palacio de Oriente	2
+Atún de lata	Aleix Clavera	4	Tejero	2
+Atún de lata	Aleix Clavera	5	Isabel	4
+Atún de lata	Aleix Clavera	6	Albo	7
+Atún de lata	Aleix Clavera	7	Cuca	2
+Atún de lata	Aleix Clavera	8	Calvo	8
+Atún de lata	Aleix Clavera	9	Campos	6
+Mayonesa	Ariadna Julián	1	Heinz	6
+Mayonesa	Ariadna Julián	2	Ybarra	0
+Mayonesa	Ariadna Julián	3	Santa Teresa	7
+Mayonesa	Ariadna Julián	4	Calvé	3
+Mayonesa	Ariadna Julián	5	Prima	5
+Mayonesa	Ariadna Julián	6	Hellmann's	4
+Mayonesa	Ariadna Julián	7	Kraft	4.5
+Mayonesa	Ariadna Julián	8	Musa	0
+Patatas fritas	Ada Parellada	1	Aliada (El Corte Inglés)	3
+Patatas fritas	Ada Parellada	2	Lay's	6
+Patatas fritas	Ada Parellada	3	Snack day (Lidl)	4
+Patatas fritas	Ada Parellada	4	Bonilla	7
+Patatas fritas	Ada Parellada	5	Hacendado (Mercadona)	5
+Patatas fritas	Ada Parellada	6	Frit Ravich	6.5
+Patatas fritas	Ada Parellada	7	San Nicasio	9
+Patatas fritas	Ada Parellada	8	Dia	6
+Patatas fritas	Ada Parellada	9	Eroski	7
+Aceitunas	Kike Martínez	1	El Corte Inglés	5
+Aceitunas	Kike Martínez	2	Jolca	5
+Aceitunas	Kike Martínez	3	Hacendado (Mercadona)	4
+Aceitunas	Kike Martínez	4	Alcampo	4
+Aceitunas	Kike Martínez	5	Serpis	2
+Aceitunas	Kike Martínez	6	El Xillu	8
+Aceitunas	Kike Martínez	7	La Española	7
+Aceitunas	Kike Martínez	8	Carrefour	2
+Aceitunas	Kike Martínez	9	Dani	4
+Aceitunas	Beatriz Vinaches	1	El Corte Inglés	5
+Aceitunas	Beatriz Vinaches	2	Jolca	5
+Aceitunas	Beatriz Vinaches	3	Hacendado (Mercadona)	3
+Aceitunas	Beatriz Vinaches	4	Alcampo	4
+Aceitunas	Beatriz Vinaches	5	Serpis	2
+Aceitunas	Beatriz Vinaches	6	El Xillu	8
+Aceitunas	Beatriz Vinaches	7	La Española	7
+Aceitunas	Beatriz Vinaches	8	Carrefour	3
+Aceitunas	Beatriz Vinaches	9	Dani	4
+Pan	Ibán Yarza	1	Lidl	4
+Pan	Ibán Yarza	2	Mercadona	2
+Pan	Ibán Yarza	3	Granier	5
+Pan	Ibán Yarza	4	Consum	1
+Pan	Ibán Yarza	5	Carrefour	2
+Pan	Ibán Yarza	6	Santagloria	4
+Pan	Ibán Yarza	7	Spar	4
+Pizza	Pino Prestanizzi	1	Chef Select (Lidl)	3
+Pizza	Pino Prestanizzi	2	Casa Tarradellas	4
+Pizza	Pino Prestanizzi	3	El Corte Inglés	3
+Pizza	Pino Prestanizzi	4	Buitoni	-2
+Pizza	Pino Prestanizzi	5	Carrefour	3
+Pizza	Pino Prestanizzi	6	Dr. Oetker	2
+Pizza	Pino Prestanizzi	7	Dia	3
+Pizza	Pino Prestanizzi	8	Campofrío	3
+Chocolate	Lucila Canero	1	Nestlé	4
+Chocolate	Lucila Canero	2	Suchard	5
+Chocolate	Lucila Canero	3	Lindt	5.5
+Chocolate	Lucila Canero	4	Hacendado (Mercadona)	5
+Chocolate	Lucila Canero	5	La Casa	5
+Chocolate	Lucila Canero	6	Valrhona	8
+Chocolate	Lucila Canero	7	Aliada (El Corte Inglés)	4.5
+Chocolate	Lucila Canero	8	Valor	5
+Chocolate	Lucila Canero	9	Fin Carré (Lidl)	7
+Leche	Mariona Martín	1	Central Lechera Asturiana	4.5
+Leche	Mariona Martín	2	Pascual	2.5
+Leche	Mariona Martín	3	Président	3
+Leche	Mariona Martín	4	Puleva Eco	4
+Leche	Mariona Martín	5	Ato Eco	3
+Leche	Mariona Martín	6	El Castillo	2.5
+Leche	Mariona Martín	7	Celta	4
+Leche	Mariona Martín	8	Unicla	2
+Leche	Mariona Martín	9	Muuu	2.5
+Cerveza sin alcohol	Guillem Laporta	1	Free Damm	6.5
+Cerveza sin alcohol	Guillem Laporta	2	Carrefour	7.5
+Cerveza sin alcohol	Guillem Laporta	3	Mahou Sin	7
+Cerveza sin alcohol	Guillem Laporta	4	Perlenbacher (Lidl)	4.5
+Cerveza sin alcohol	Guillem Laporta	5	Buckler	3.5
+Cerveza sin alcohol	Guillem Laporta	6	San Miguel	7
+Cerveza sin alcohol	Guillem Laporta	7	Steinburg (Mercadona)	7
+Cerveza sin alcohol	Guillem Laporta	8	Estrella Galicia	6
+Cerveza sin alcohol	Guillem Laporta	9	Amstel	5
+Té (bolsita)	Victoria Bisogno	1	Hornimans	3
+Té (bolsita)	Victoria Bisogno	2	Teapigs	1
+Té (bolsita)	Victoria Bisogno	3	Tetley	2
+Té (bolsita)	Victoria Bisogno	4	PG Tips	4
+Té (bolsita)	Victoria Bisogno	5	Lipton	1
+Té (bolsita)	Victoria Bisogno	6	Sans & Sans	5
+Té (bolsita)	Victoria Bisogno	7	Twinings	2
+Té (bolsita)	Victoria Bisogno	8	Pompadour	5
+Turrón	Jordi Butrón	1	El Almendro	4
+Turrón	Jordi Butrón	2	El Lobo	1
+Turrón	Jordi Butrón	3	Delaviuda	4
+Turrón	Jordi Butrón	4	1880	3.5
+Turrón	Jordi Butrón	5	Suchard	2
+Turrón	Jordi Butrón	6	Nestlé	4.5
+Turrón	Jordi Butrón	7	Aliada (El Corte Inglés)	3.75
+Turrón	Jordi Butrón	8	Hacendado (Mercadona)	5
+Turrón	Jordi Butrón	9	Carrefour	2
+Turrón	Jordi Butrón	10	Dia	2.5
+Agua	Faustino Muñoz	1	Sevilla	8
+Agua	Faustino Muñoz	2	Mallorca	3
+Agua	Faustino Muñoz	3	Valencia	2
+Agua	Faustino Muñoz	4	Zaragoza	6
+Agua	Faustino Muñoz	5	Bilbao	5
+Agua	Faustino Muñoz	6	Málaga	6
+Agua	Faustino Muñoz	7	Madrid	0
+Agua	Faustino Muñoz	8	Barcelona	0
+Agua	Faustino Muñoz	9	Murcia	0
+Agua	Faustino Muñoz	10	Las Palmas de Gran Canaria	1
+Cava	Isabelle Brunet	1	Dominio de la Vega	7
+Cava	Isabelle Brunet	2	Jaume Serra	5
+Cava	Isabelle Brunet	3	Anna Codorniu	5
+Cava	Isabelle Brunet	4	Royal Carlton	4
+Cava	Isabelle Brunet	5	Segura Viudas	7
+Cava	Isabelle Brunet	6	Agusti Torrello Mata	8
+Cava	Isabelle Brunet	7	Via de la Plata	3
+Cava	Isabelle Brunet	8	Freixenet	2.5
+Cava	Isabelle Brunet	9	Bach Extrísimo	8.5
+Fuet	Dolors Canal	1	Tarradellas	7
+Fuet	Dolors Canal	2	El Pozo	6
+Fuet	Dolors Canal	3	Argal	7
+Fuet	Dolors Canal	4	Can Durán	8
+Fuet	Dolors Canal	5	Riera Ordeix	6
+Fuet	Dolors Canal	6	Can Salgot	8.5
+Fuet	Dolors Canal	7	Navidul	6.5
+Fuet	Dolors Canal	8	Casademont	8
+Fuet	Dolors Canal	9	Noel	7.5
+Fuet	Roberto Mearelli	1	Tarradellas	8
+Fuet	Roberto Mearelli	2	El Pozo	7
+Fuet	Roberto Mearelli	3	Argal	7.5
+Fuet	Roberto Mearelli	4	Can Durán	8
+Fuet	Roberto Mearelli	5	Riera Ordeix	7
+Fuet	Roberto Mearelli	6	Can Salgot	8
+Fuet	Roberto Mearelli	7	Navidul	7.5
+Fuet	Roberto Mearelli	8	Casademont	7
+Fuet	Roberto Mearelli	9	Noel	8
+Aceite de oliva virgen extra	Montse Freixa	1	Hacendado Gran Selección	7
+Aceite de oliva virgen extra	Montse Freixa	2	Borges	3.5
+Aceite de oliva virgen extra	Montse Freixa	3	Coosur	4
+Aceite de oliva virgen extra	Montse Freixa	4	Maestros de Hojiblanca	4.5
+Aceite de oliva virgen extra	Montse Freixa	5	Oleostepa	7
+Aceite de oliva virgen extra	Montse Freixa	6	La Española	4
+Aceite de oliva virgen extra	Montse Freixa	7	Marqués de Griñón	3.5
+Aceite de oliva virgen extra	Montse Freixa	8	Carbonell	5
+Aceite de oliva virgen extra	Montse Freixa	9	De Nuestra Tierra (Carrefour)	5
+Helado de chocolate	Pol Contreras	1	Häagen Dazs	5.5
+Helado de chocolate	Pol Contreras	2	El Corte Inglés	4.5
+Helado de chocolate	Pol Contreras	3	Carte D'Or	6
+Helado de chocolate	Pol Contreras	4	La Lechera	5
+Helado de chocolate	Pol Contreras	5	Ben&Jerry's	5.5
+Helado de chocolate	Pol Contreras	6	Sandro Desii	4
+Helado de chocolate	Pol Contreras	7	Eroski	6.5
+Helado de chocolate	Pol Contreras	8	Magnum	6
+Helado de chocolate	Pol Contreras	9	Auchan (Alcampo)	5
+Ketchup	Òscar Broc	1	Hellmann's	6.5
+Ketchup	Òscar Broc	2	Prima	6
+Ketchup	Òscar Broc	3	Heinz	5.5
+Ketchup	Òscar Broc	4	Orlando	4
+Ketchup	Òscar Broc	5	Cortejo de Sarteneja	7.5
+Ketchup	Òscar Broc	6	Ybarra	6
+Ketchup	Òscar Broc	7	Chovi	5.5
+Ketchup	Òscar Broc	8	Stokes	6
+Ketchup	Òscar Broc	9	Mutti	6.5
+Yogur griego	Spiros Degretzakis	1	Oikos (Danone)	4
+Yogur griego	Spiros Degretzakis	2	Hacendado (Mercadona)	3
+Yogur griego	Spiros Degretzakis	3	Cantero de Letur	5
+Yogur griego	Spiros Degretzakis	4	Casa Grande de Xanceda	1
+Yogur griego	Spiros Degretzakis	5	Milbona (Lidl)	3
+Yogur griego	Spiros Degretzakis	6	Yaos (Netstlé)	4
+Yogur griego	Spiros Degretzakis	7	Reina	6
+Yogur griego	Spiros Degretzakis	8	Milsani (Aldi)	4
+Caldo envasado	Borja Sierra	1	Knorr	2
+Caldo envasado	Borja Sierra	2	Eroski	5
+Caldo envasado	Borja Sierra	3	Kania (Lidl)	5
+Caldo envasado	Borja Sierra	4	Aneto	6
+Caldo envasado	Borja Sierra	5	Dia	1
+Caldo envasado	Borja Sierra	6	Hacendado (Mercadona)	7
+Caldo envasado	Borja Sierra	7	Gallina Blanca	2
+Caldo envasado	Borja Sierra	8	Aliada (El Corte Inglés)	0.5
+Jamón York	Lluis Bragulat	1	Casa Tarradellas	6
+Jamón York	Lluis Bragulat	2	Realvalle (Lidl)	4
+Jamón York	Lluis Bragulat	3	Argal	3
+Jamón York	Lluis Bragulat	4	Hacendado (Mercadona)	6
+Jamón York	Lluis Bragulat	5	Campofrío	2
+Jamón York	Lluis Bragulat	6	Carrefour	3.5
+Jamón York	Lluis Bragulat	7	El Pozo	6.5
+Jamón York	Lluis Bragulat	8	La Selva	8
+Jamón York	Lluis Bragulat	9	El Corte Inglés	2
+Croquetas	Toni Romero	1	Maheso	6
+Croquetas	Toni Romero	2	La Cocinera	4.5
+Croquetas	Toni Romero	3	Selección (Carrefour)	8
+Croquetas	Toni Romero	4	Senén	7
+Croquetas	Toni Romero	5	Alcampo	5
+Croquetas	Toni Romero	6	Fridela	7.5
+Croquetas	Toni Romero	7	Hacendado (Mercadona)	4
+Croquetas	Toni Romero	8	Monissa (Lidl)	4.5
+Croquetas	Toni Romero	9	El Corte Inglés	7
+Mozzarella	Adriana Restano	1	Galvani	8
+Mozzarella	Adriana Restano	2	Ponte Reale	6.5
+Mozzarella	Adriana Restano	3	Zanetti	7
+Mozzarella	Adriana Restano	4	Hacendado	8.5
+Mozzarella	Adriana Restano	5	Eroski	8
+Mozzarella	Adriana Restano	6	Dia	4.5
+Mozzarella	Adriana Restano	7	Central Lechera Asturiana	7
+Mozzarella	Adriana Restano	8	Lovilio (Lidl)	7
+Mozzarella	Adriana Restano	9	Consum	5.5
+Mozzarella	Adriana Restano	10	Carrefour	7.5
+Turrón blando	Enric Monzones	1	El Almendro	5.5
+Turrón blando	Enric Monzones	2	1880	4
+Turrón blando	Enric Monzones	3	Vicens	5
+Turrón blando	Enric Monzones	4	Virginias	3.5
+Turrón blando	Enric Monzones	5	El Lobo	3
+Turrón blando	Enric Monzones	6	Pablo Garrigós Ibáñez	6
+Turrón blando	Enric Monzones	7	Delaviuda	4.5
+Turrón blando	Enric Monzones	8	Picó	4.5
+Mantquilla	Romain Fornell	1	Pascual	5
+Mantquilla	Romain Fornell	2	Central Lechera Asturiana	5
+Mantquilla	Romain Fornell	3	Hacendado	4
+Mantquilla	Romain Fornell	4	De Nuestra Tierra (Carrefour)	4
+Mantquilla	Romain Fornell	5	Burgo de Arias	4.5
+Mantquilla	Romain Fornell	6	Milbona (Lidl)	4
+Mantquilla	Romain Fornell	7	Cadí	4
+Mantquilla	Romain Fornell	8	Président	5.5
+Mantquilla	Romain Fornell	9	Kerrygold	4
