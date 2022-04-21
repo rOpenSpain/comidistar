@@ -40,6 +40,10 @@ puntuaciones
 ```
 
 
+```{r to-utf8, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+puntuaciones$producto_n <- iconv(puntuaciones$producto_n, to = "UTF-8")
+```
+
 Por último, visualizamos los datos:
 
 ```{r puntuaciones, warning=FALSE, fig.height=8, fig.width=7, fig.cap="Distribuci\u00f3n de las puntuaciones de las catas a ciegas para cada producto. Distribuci\u00f3n de las puntuaciones (eje X) de cada producto (eje Y). El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95\\% de las puntuaciones de la distribuci\u00f3n. Las l\u00edneas verticales dentro de cada distribuciu00f3n indican las puntuaciones individuales para cada marca, por parte de una de las personas del jurado."}
