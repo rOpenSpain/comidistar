@@ -8,6 +8,7 @@ videos <- as_tibble(
         col.names = c("producto", "fecha", "link")
     )
 )
+videos$fecha <- as.Date(videos$fecha, format = "%d/%m/%y")
 
 # load data
 usethis::use_data(videos, overwrite = TRUE)
