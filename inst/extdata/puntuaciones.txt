@@ -365,7 +365,7 @@ Croquetas	Toni Romero	9	El Corte Inglés	7
 Mozzarella	Adriana Restano	1	Galvani	8
 Mozzarella	Adriana Restano	2	Ponte Reale	6.5
 Mozzarella	Adriana Restano	3	Zanetti	7
-Mozzarella	Adriana Restano	4	Hacendado	8.5
+Mozzarella	Adriana Restano	4	Hacendado (Mercadona)	8.5
 Mozzarella	Adriana Restano	5	Eroski	8
 Mozzarella	Adriana Restano	6	Dia	4.5
 Mozzarella	Adriana Restano	7	Central Lechera Asturiana	7
@@ -380,12 +380,12 @@ Turrón blando	Enric Monzones	5	El Lobo	3
 Turrón blando	Enric Monzones	6	Pablo Garrigós Ibáñez	6
 Turrón blando	Enric Monzones	7	Delaviuda	4.5
 Turrón blando	Enric Monzones	8	Picó	4.5
-Mantquilla	Romain Fornell	1	Pascual	5
-Mantquilla	Romain Fornell	2	Central Lechera Asturiana	5
-Mantquilla	Romain Fornell	3	Hacendado	4
-Mantquilla	Romain Fornell	4	De Nuestra Tierra (Carrefour)	4
-Mantquilla	Romain Fornell	5	Burgo de Arias	4.5
-Mantquilla	Romain Fornell	6	Milbona (Lidl)	4
-Mantquilla	Romain Fornell	7	Cadí	4
-Mantquilla	Romain Fornell	8	Président	5.5
-Mantquilla	Romain Fornell	9	Kerrygold	4
+Mantequilla	Romain Fornell	1	Pascual	5
+Mantequilla	Romain Fornell	2	Central Lechera Asturiana	5
+Mantequilla	Romain Fornell	3	Hacendado (Mercadona)	4
+Mantequilla	Romain Fornell	4	De Nuestra Tierra (Carrefour)	4
+Mantequilla	Romain Fornell	5	Burgo de Arias	4.5
+Mantequilla	Romain Fornell	6	Milbona (Lidl)	4
+Mantequilla	Romain Fornell	7	Cadí	4
+Mantequilla	Romain Fornell	8	Président	5.5
+Mantequilla	Romain Fornell	9	Kerrygold	4

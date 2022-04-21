@@ -17,7 +17,7 @@ Fuet	Can Salgot	28.61	1000 g
 Fuet	Navidul	12.29	1000 g
 Fuet	Casademont	9.75	1000 g
 Fuet	Noel	11.47	1000 g
-Aceite de oliva virgen extra	Hacendado Gran Selección	4.92	1000 ml
+Aceite de oliva virgen extra	Hacendado (Mercadona)	4.92	1000 ml
 Aceite de oliva virgen extra	Borges	6.23	1000 ml
 Aceite de oliva virgen extra	Coosur	4.49	1000 ml
 Aceite de oliva virgen extra	Maestros de Hojiblanca	4.99	1000 ml
@@ -329,7 +329,7 @@ Café (molido)	Carrefour	7.96	1000 g
 Mozzarella	Galvani	19.92	1001 g
 Mozzarella	Ponte Reale	14.56	1000 g
 Mozzarella	Zanetti	16	1000 g
-Mozzarella	Hacendado	4.46	1000 g
+Mozzarella	Hacendado (Mercadona)	4.46	1000 g
 Mozzarella	Eroski	6.72	1000 g
 Mozzarella	Dia	6.8	1000 g
 Mozzarella	Central Lechera Asturiana	10	1000 g
@@ -346,7 +346,7 @@ Turrón blando	Delaviuda	19.12	1000 g
 Turrón blando	Picó	16.5	1000 g
 Mantequilla	Pascual	8.64	1000 g
 Mantequilla	Central Lechera Asturiana	9.4	1000 g
-Mantequilla	Hacendado	6.6	1000 g
+Mantequilla	Hacendado (Mercadona)	6.6	1000 g
 Mantequilla	De Nuestra Tierra (Carrefour)	18.76	1000 g
 Mantequilla	Burgo de Arias	10.36	1000 g
 Mantequilla	Milbona (Lidl)	8.5	1000 g
