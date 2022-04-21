@@ -2,12 +2,16 @@
 
 ## Nuevo contenido
 
-* Añade datos sobre las catas de mozzarella y mantequilla
+* Añade datos sobre las catas de mozzarella y mantequilla en los data frames de `puntuaciones`, `productos` y `videos`
+* Simplifica la viñeta *puntuaciones*
+* Corrige erratas en nombres y marcas de productos
 
 ## Aspectos técnicos
 
-* Elimina las dependencias de {readr} y {here}
+* Elimina las dependencias de {readr} y {here} en *Imports*
+* Elimina las dependencias de {ggdist} y {patchwork} en *Suggest* y *VignetteBuilder*
 * Datos externos pasan de estar en formato CSV a TSV
+
 
 # comidistar 0.1.0
 

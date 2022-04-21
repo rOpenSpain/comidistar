@@ -103,110 +103,72 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gongcastro.github.io/comidistar/" class="external-link">comidistar</a></span><span class="op">)</span> <span class="co"># contiene los datos y funciones ayudantes</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span> <span class="co"># para manejar los datos en formato tidy</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span> <span class="co"># para visualizar los datos</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://mjskay.github.io/ggdist/" class="external-link">ggdist</a></span><span class="op">)</span> <span class="co"># geoms extra para visualizar las distribuciones</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://patchwork.data-imaginist.com" class="external-link">patchwork</a></span><span class="op">)</span> <span class="co"># para juntar gráficos</span></code></pre></div>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span> <span class="co"># para visualizar los datos</span></code></pre></div>
 <p>Ahora cargamos los datos y los agregamos:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># cargamos los datos</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"puntuaciones"</span><span class="op">)</span> 
 
-<span class="co"># agregamos los datos de cada producto usando ggdist::mean_qi</span>
-<span class="co"># (calcula los centiles 5 y 95 por defecto)</span>
-<span class="va">puntuaciones_agregadas</span> <span class="op">&lt;-</span> <span class="va">puntuaciones</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">producto</span>, <span class="va">puntuacion</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">producto</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
-  <span class="fu"><a href="http://mjskay.github.io/ggdist/reference/point_interval.html" class="external-link">mean_qi</a></span><span class="op">(</span><span class="op">)</span>
+<span class="va">puntuaciones</span> <span class="op">&lt;-</span> <span class="va">puntuaciones</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="va">puntuaciones</span>, <span class="va">producto</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>  <span class="co"># pegar numero de observaciones de cada producto</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>producto_n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="va">producto</span>, <span class="st">" (n = "</span>, <span class="va">n</span>, <span class="st">")"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">producto_n</span>, <span class="va">puntuacion</span><span class="op">)</span> 
 
-<span class="va">puntuaciones_agregadas</span>
-<span class="co">#&gt; <span style="color: #949494;"># A tibble: 40 x 7</span></span>
-<span class="co">#&gt;    producto                     puntuacion .lower .upper .width .point .interval</span>
-<span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                             <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Aceite de oliva virgen extra       4.83  3.5     7      0.95 mean   qi       </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Aceitunas                          4.56  2       8      0.95 mean   qi       </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Agua                               3.1   0       7.55   0.95 mean   qi       </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Atún de lata                       4.78  2       7.8    0.95 mean   qi       </span> 
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Café (cápsula)                     3.72  2       5      0.95 mean   qi       </span>  
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Café (molido)                      4.06  2       6.3    0.95 mean   qi       </span> 
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Caldo envasado                     3.56  0.588   6.82   0.95 mean   qi       </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Cava                               5.56  2.6     8.4    0.95 mean   qi       </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Cerveza                            4.33  2.43    6.79   0.95 mean   qi       </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Cerveza sin alcohol                6     3.7     7.4    0.95 mean   qi       </span>
-<span class="co">#&gt; <span style="color: #949494;"># ... with 30 more rows</span></span></code></pre></div>
-<p>Por último, visualizamos los datos usando una combinación de ggplot2, ggdist y patchwork.</p>
+<span class="va">puntuaciones</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 390 x 2</span></span>
+<span class="co">#&gt;    producto_n              puntuacion</span>
+<span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Yogur (n = 8)                    5</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Yogur (n = 8)                    5</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Yogur (n = 8)                    5</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Yogur (n = 8)                    6</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Yogur (n = 8)                    8</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Yogur (n = 8)                    5</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Yogur (n = 8)                    9</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Yogur (n = 8)                    6</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Salsa de tomate (n = 8)          6</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Salsa de tomate (n = 8)          7</span>
+<span class="co">#&gt; <span style="color: #949494;"># ... with 380 more rows</span></span></code></pre></div>
+<p>Por último, visualizamos los datos:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 
-<span class="co"># distribución general</span>
-<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">puntuaciones</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">puntuacion</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="http://mjskay.github.io/ggdist/reference/stat_halfeye.html" class="external-link">stat_halfeye</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes_eval.html" class="external-link">stat</a></span><span class="op">(</span><span class="fu"><a href="http://mjskay.github.io/ggdist/reference/cut_cdf_qi.html" class="external-link">cut_cdf_qi</a></span><span class="op">(</span><span class="va">cdf</span>, .width <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">.5</span>, <span class="fl">.66</span>, <span class="fl">.8</span>, <span class="fl">.95</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>
-    x <span class="op">=</span> <span class="st">"Puntuaci\u00f3n"</span>,
-    y <span class="op">=</span> <span class="st">"Densidad"</span>, 
-    fill <span class="op">=</span> <span class="st">"Cuantil"</span>
-  <span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="external-link">scale_fill_brewer</a></span><span class="op">(</span>
-    direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span>, 
-    palette <span class="op">=</span> <span class="st">"Oranges"</span>,
-    na.translate <span class="op">=</span> <span class="cn">FALSE</span>
-  <span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_comidistar.html">theme_comidistar</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>
-    axis.line.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,
-    axis.text.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,
-    axis.title.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,
-    axis.ticks.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>
-  <span class="op">)</span> <span class="op">+</span>
-  
-  <span class="co"># distribución de cada producto</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">puntuaciones_agregadas</span><span class="op">)</span> <span class="op">+</span>
+<span class="co"># distribución de cada producto</span>
+<span class="va">puntuaciones</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>
     x <span class="op">=</span> <span class="va">puntuacion</span>,
-    y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/reorder.factor.html" class="external-link">reorder</a></span><span class="op">(</span><span class="va">producto</span>, <span class="va">puntuacion</span><span class="op">)</span>
+    y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/reorder.factor.html" class="external-link">reorder</a></span><span class="op">(</span><span class="va">producto_n</span>, <span class="va">puntuacion</span><span class="op">)</span>
   <span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html" class="external-link">geom_vline</a></span><span class="op">(</span>
     xintercept <span class="op">=</span> <span class="fl">5</span>, 
     colour <span class="op">=</span> <span class="st">"grey"</span>, 
     size <span class="op">=</span> <span class="fl">1</span>
   <span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="http://mjskay.github.io/ggdist/reference/geom_pointinterval.html" class="external-link">geom_pointinterval</a></span><span class="op">(</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>
-      xmin <span class="op">=</span> <span class="va">.lower</span>, 
-      xmax <span class="op">=</span> <span class="va">.upper</span>
-    <span class="op">)</span>, 
-    size <span class="op">=</span> <span class="fl">2</span>
-  <span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span>
-    data <span class="op">=</span> <span class="va">puntuaciones</span>, 
-    shape <span class="op">=</span> <span class="st">"|"</span>, 
-    position <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/position_nudge.html" class="external-link">position_nudge</a></span><span class="op">(</span>y <span class="op">=</span> <span class="fl">0.16</span><span class="op">)</span>
+    size <span class="op">=</span> <span class="fl">1</span>,
+    alpha <span class="op">=</span> <span class="fl">0.5</span>
   <span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html" class="external-link">geom_text</a></span><span class="op">(</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>
-      x <span class="op">=</span> <span class="op">-</span><span class="fl">2</span>, 
-      label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"("</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="va">puntuaciones</span>, <span class="va">producto</span><span class="op">)</span><span class="op">$</span><span class="va">n</span>, <span class="st">")"</span><span class="op">)</span>
-    <span class="op">)</span>,
-    size <span class="op">=</span> <span class="fl">3</span>, 
-    hjust <span class="op">=</span> <span class="fl">0</span>
-  <span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/stat_summary.html" class="external-link">stat_summary</a></span><span class="op">(</span>
+    fun.data <span class="op">=</span> <span class="st">"mean_se"</span>, 
+    geom <span class="op">=</span> <span class="st">"pointrange"</span>, 
+    colour <span class="op">=</span> <span class="st">"orange"</span>,
+    size <span class="op">=</span> <span class="fl">0.75</span>,
+    shape <span class="op">=</span> <span class="fl">1</span>,
+    stroke <span class="op">=</span> <span class="fl">1</span>
+    <span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>
     x <span class="op">=</span> <span class="st">"Puntuaci\u00f3n"</span>, 
     y <span class="op">=</span> <span class="st">"Producto"</span>, 
-    colour <span class="op">=</span> <span class="st">"Intervalo de confianza"</span>
+    colour <span class="op">=</span> <span class="st">"Intervalo de confianza"</span>,
+    title <span class="op">=</span> <span class="st">"Puntuaci\u00f3n asignada a cada producto"</span>,
+    subtitle <span class="op">=</span> <span class="st">"Los c\u00EDrculos naranjas y barras de error indican la media y error t\u00EDpico"</span>
   <span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="../reference/theme_comidistar.html">theme_comidistar</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  
-  <span class="co"># juntar los dos gráficos usando patchwork</span>
-  <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_layout.html" class="external-link">plot_layout</a></span><span class="op">(</span>
-    ncol <span class="op">=</span> <span class="fl">1</span>,
-    heights <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.12</span>, <span class="fl">0.9</span><span class="op">)</span>
-  <span class="op">)</span> <span class="op">&amp;</span>
-  <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_annotation.html" class="external-link">plot_annotation</a></span><span class="op">(</span>tag_levels <span class="op">=</span> <span class="st">"A"</span><span class="op">)</span> <span class="op">&amp;</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>
-    limits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">2</span>, <span class="fl">10</span><span class="op">)</span>, 
-    labels <span class="op">=</span> <span class="va">as.integer</span>
-  <span class="op">)</span> <span class="op">&amp;</span>
+    limits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">2.5</span>, <span class="fl">10</span><span class="op">)</span>,
+    breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">3</span>, <span class="fl">10</span>, <span class="fl">1</span><span class="op">)</span>
+  <span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>
     axis.title.y <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,
     panel.grid.major.y <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,
@@ -217,8 +179,8 @@
     legend.position <span class="op">=</span> <span class="st">"top"</span>
   <span class="op">)</span></code></pre></div>
 <div class="figure">
-<img src="puntuaciones_files/figure-html/puntuaciones-1.png" alt="Distribución de las puntuaciones de las catas a ciegas para cada producto. (A) Distribución genereal de las puntuaciones (a través de todos los productos). Los diferentes intervalos (indicados mediante tonalidades de naranja) indican el porcentaje de las puntuaciones que caen dentro de su rango. El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95\% de las puntuaciones de la distribución. (B) Distribución de las puntuaciones (eje X) de cada producto (eje Y). El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95\% de las puntuaciones de la distribución. Las líneas verticales dentro de cada distribuciu00f3n indican las puntuaciones individuales para cada marca, por parte de una de las personas del jurado." width="100%"><p class="caption">
-Distribución de las puntuaciones de las catas a ciegas para cada producto. (A) Distribución genereal de las puntuaciones (a través de todos los productos). Los diferentes intervalos (indicados mediante tonalidades de naranja) indican el porcentaje de las puntuaciones que caen dentro de su rango. El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95% de las puntuaciones de la distribución. (B) Distribución de las puntuaciones (eje X) de cada producto (eje Y). El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95% de las puntuaciones de la distribución. Las líneas verticales dentro de cada distribuciu00f3n indican las puntuaciones individuales para cada marca, por parte de una de las personas del jurado.
+<img src="puntuaciones_files/figure-html/puntuaciones-1.png" alt="Distribución de las puntuaciones de las catas a ciegas para cada producto. Distribución de las puntuaciones (eje X) de cada producto (eje Y). El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95\% de las puntuaciones de la distribución. Las líneas verticales dentro de cada distribuciu00f3n indican las puntuaciones individuales para cada marca, por parte de una de las personas del jurado." width="100%"><p class="caption">
+Distribución de las puntuaciones de las catas a ciegas para cada producto. Distribución de las puntuaciones (eje X) de cada producto (eje Y). El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95% de las puntuaciones de la distribución. Las líneas verticales dentro de cada distribuciu00f3n indican las puntuaciones individuales para cada marca, por parte de una de las personas del jurado.
 </p>
 </div>
   </div>

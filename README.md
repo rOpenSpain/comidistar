@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# comidistar <img src='man/figures/logo.png' align="right" height="80" margin-left="30px"/>
+# comidistar <img src='man/figures/logo.png' align="right" style="float:right; height:200px; margin-left:10%;"/>
 
 <!-- badges: start -->
 

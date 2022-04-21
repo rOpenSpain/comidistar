@@ -23,8 +23,6 @@ Primero cargamos los paquetes que necesitaremos:
 library(comidistar) # contiene los datos y funciones ayudantes
 library(dplyr) # para manejar los datos en formato tidy
 library(ggplot2) # para visualizar los datos
-library(ggdist) # geoms extra para visualizar las distribuciones
-library(patchwork) # para juntar gráficos
 ```
 
 Ahora cargamos los datos y los agregamos:
@@ -33,92 +31,56 @@ Ahora cargamos los datos y los agregamos:
 # cargamos los datos
 data("puntuaciones") 
 
-# agregamos los datos de cada producto usando ggdist::mean_qi
-# (calcula los centiles 5 y 95 por defecto)
-puntuaciones_agregadas <- puntuaciones %>% 
-  select(producto, puntuacion) %>% 
-  group_by(producto) %>% 
-  mean_qi()
+puntuaciones <- puntuaciones %>% 
+  left_join(count(puntuaciones, producto)) %>%  # pegar numero de observaciones de cada producto
+  mutate(producto_n = paste0(producto, " (n = ", n, ")")) %>% 
+  select(producto_n, puntuacion) 
 
-puntuaciones_agregadas
+puntuaciones
 ```
 
 
-Por último, visualizamos los datos usando una combinación de ggplot2, ggdist y patchwork.
+Por último, visualizamos los datos:
 
-```{r puntuaciones, warning=FALSE, fig.height=8, fig.width=5, fig.cap="Distribuci\u00f3n de las puntuaciones de las catas a ciegas para cada producto. (A) Distribuci\u00f3n genereal de las puntuaciones (a trav\u00e9s de todos los productos). Los diferentes intervalos (indicados mediante tonalidades de naranja) indican el porcentaje de las puntuaciones que caen dentro de su rango. El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95\\% de las puntuaciones de la distribuci\u00f3n. (B) Distribuci\u00f3n de las puntuaciones (eje X) de cada producto (eje Y). El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95\\% de las puntuaciones de la distribuci\u00f3n. Las l\u00edneas verticales dentro de cada distribuciu00f3n indican las puntuaciones individuales para cada marca, por parte de una de las personas del jurado."}
+```{r puntuaciones, warning=FALSE, fig.height=8, fig.width=7, fig.cap="Distribuci\u00f3n de las puntuaciones de las catas a ciegas para cada producto. Distribuci\u00f3n de las puntuaciones (eje X) de cada producto (eje Y). El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95\\% de las puntuaciones de la distribuci\u00f3n. Las l\u00edneas verticales dentro de cada distribuciu00f3n indican las puntuaciones individuales para cada marca, por parte de una de las personas del jurado."}
 
 
-# distribución general
-ggplot(puntuaciones) +
-  aes(x = puntuacion) +
-  stat_halfeye(aes(fill = stat(cut_cdf_qi(cdf, .width = c(.5, .66, .8, .95))))) +
-  labs(
-    x = "Puntuaci\u00f3n",
-    y = "Densidad", 
-    fill = "Cuantil"
-  ) +
-  scale_fill_brewer(
-    direction = -1, 
-    palette = "Oranges",
-    na.translate = FALSE
-  ) +
-  theme_comidistar() +
-  theme(
-    axis.line.x = element_blank(),
-    axis.text.x = element_blank(),
-    axis.title.x = element_blank(),
-    axis.ticks.x = element_blank()
-  ) +
-  
-  # distribución de cada producto
-  ggplot(puntuaciones_agregadas) +
+# distribución de cada producto
+puntuaciones %>% 
+  ggplot() +
   aes(
     x = puntuacion,
-    y = reorder(producto, puntuacion)
+    y = reorder(producto_n, puntuacion)
   ) + 
   geom_vline(
     xintercept = 5, 
     colour = "grey", 
     size = 1
   ) +
-  geom_pointinterval(
-    aes(
-      xmin = .lower, 
-      xmax = .upper
-    ), 
-    size = 2
-  ) +
   geom_point(
-    data = puntuaciones, 
-    shape = "|", 
-    position = position_nudge(y = 0.16)
+    size = 1,
+    alpha = 0.5
   ) +
-  geom_text(
-    aes(
-      x = -2, 
-      label = paste0("(", count(puntuaciones, producto)$n, ")")
-    ),
-    size = 3, 
-    hjust = 0
-  ) +
+  stat_summary(
+    fun.data = "mean_se", 
+    geom = "pointrange", 
+    colour = "orange",
+    size = 0.75,
+    shape = 1,
+    stroke = 1
+    ) +
   labs(
     x = "Puntuaci\u00f3n", 
     y = "Producto", 
-    colour = "Intervalo de confianza"
+    colour = "Intervalo de confianza",
+    title = "Puntuaci\u00f3n asignada a cada producto",
+    subtitle = "Los c\u00EDrculos naranjas y barras de error indican la media y error t\u00EDpico"
   ) +
   theme_comidistar() +
-  
-  # juntar los dos gráficos usando patchwork
-  plot_layout(
-    ncol = 1,
-    heights = c(0.12, 0.9)
-  ) &
-  plot_annotation(tag_levels = "A") &
   scale_x_continuous(
-    limits = c(-2, 10), 
-    labels = as.integer
-  ) &
+    limits = c(-2.5, 10),
+    breaks = seq(-3, 10, 1)
+  ) +
   theme(
     axis.title.y = element_blank(),
     panel.grid.major.y = element_blank(),
@@ -128,5 +90,6 @@ ggplot(puntuaciones) +
     ),
     legend.position = "top"
   )
+
 ```
 
