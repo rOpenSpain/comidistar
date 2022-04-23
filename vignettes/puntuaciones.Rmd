@@ -51,28 +51,35 @@ Por último, visualizamos los datos:
 
 # distribución de cada producto
 puntuaciones %>% 
+  # si hay mas de dos puntuaciones con el mismo 
+  # valor con el mismo producto, hacer mas grandes
+  count(producto_n, puntuacion) %>% 
   ggplot() +
   aes(
     x = puntuacion,
-    y = reorder(producto_n, puntuacion)
+    y = reorder(producto_n, puntuacion) # ordenar productos de mejor a peor
   ) + 
+  # linea vertical de referencia en 5
   geom_vline(
     xintercept = 5, 
     colour = "grey", 
     size = 1
   ) +
+  # puntuaciones individuales (cuantas mas puntuaciones iguales, mas grandes)
   geom_point(
-    size = 1,
-    alpha = 0.5
+    aes(size = n), 
+    stroke = 0.5, # borde del circulo mas delgado
+    colour = "orange"
   ) +
+  # calcular media y error tipico de cada producto
   stat_summary(
-    fun.data = "mean_se", 
-    geom = "pointrange", 
-    colour = "orange",
+    fun.data = "mean_se",
+    # queremos un circulo en la media y una barra de error para el error tipico
+    geom = "pointrange",
     size = 0.75,
     shape = 1,
     stroke = 1
-    ) +
+  ) +
   labs(
     x = "Puntuaci\u00f3n", 
     y = "Producto", 
@@ -80,18 +87,28 @@ puntuaciones %>%
     title = "Puntuaci\u00f3n asignada a cada producto",
     subtitle = "Los c\u00EDrculos naranjas y barras de error indican la media y error t\u00EDpico"
   ) +
-  theme_comidistar() +
+  # poner la leyenda en una sola linea (son dos por defecto)
+  guides(size = guide_legend(nrow = 1)) +
+  # poner limites al eje x
   scale_x_continuous(
     limits = c(-2.5, 10),
     breaks = seq(-3, 10, 1)
   ) +
+  # personalizar tema de ggplot2 (?theme_comidistar)
+  theme_comidistar() +
   theme(
+    # poner titulo a la izquierda del plot
+    plot.title.position = "plot",
+    # eliminar titulo del eje Y
     axis.title.y = element_blank(),
+    # eliminar rejilla del eje Y
     panel.grid.major.y = element_blank(),
+    # rejilla del eje X punteada y de color gris
     panel.grid.major.x = element_line(
       colour = "grey",
       linetype = "dotted"
     ),
+    # poner leyenda arriba
     legend.position = "top"
   )
 
