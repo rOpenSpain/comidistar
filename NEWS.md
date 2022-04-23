@@ -11,7 +11,8 @@
 * Elimina las dependencias de {readr} y {here} en *Imports*
 * Elimina las dependencias de {ggdist} y {patchwork} en *Suggest* y *VignetteBuilder*
 * Datos externos pasan de estar en formato CSV a TSV
-
+* Usa {testhat} para hacer test unitarios
+* Usa {codecov} para reportar cobertura de código 
 
 # comidistar 0.1.0
 

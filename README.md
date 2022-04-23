@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/gongcastro/comidistar/workflows/R-CMD-check/badge.svg)](https://github.com/gongcastro/comidistar/actions)
 ![GitHub top
 language](https://img.shields.io/github/languages/top/gongcastro/comidistar)
@@ -27,6 +27,9 @@ version](https://img.shields.io/github/r-package/v/gongcastro/comidistar)
 contributors](https://img.shields.io/github/contributors/gongcastro/comidistar)
 ![GitHub last
 commit](https://img.shields.io/github/last-commit/gongcastro/comidistar)
+
+[![Codecov test
+coverage](https://codecov.io/gh/gongcastro/comidistar/branch/master/graph/badge.svg)](https://codecov.io/gh/gongcastro/comidistar?branch=master)
 <!-- badges: end -->
 
 **comidistar** es un paquete de R que contiene una base de datos con las
@@ -58,3 +61,8 @@ Puedes cargar la base de datos como un *data frame* así:
 library(comidistar)
 data("puntuaciones")
 ```
+
+## Code of Conduct
+
+Please note that the comidistar project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+

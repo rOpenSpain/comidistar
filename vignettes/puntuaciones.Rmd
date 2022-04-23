@@ -76,7 +76,7 @@ puntuaciones %>%
     fun.data = "mean_se",
     # queremos un circulo en la media y una barra de error para el error tipico
     geom = "pointrange",
-    size = 0.75,
+    size = 0.65,
     shape = 1,
     stroke = 1
   ) +
