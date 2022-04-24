@@ -10,8 +10,6 @@ template:
   bootstrap: 5
   bslib:
     pkgdown-nav-height: 100px
-    base_font: {google: "Roboto"}
-    heading_font: {google: "Roboto"}
     body_color: "black"
     link_color: "#27521E"
     primary: "#27521E"
