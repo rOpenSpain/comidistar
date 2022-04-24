@@ -1,5 +1,13 @@
 ---
 title: "Visualizando las puntuaciones"
+description: "Una breve presentación de los datos de {comidistar}"
+author: "Gonzalo Garcia-Castro"
+opengraph:
+  image: 
+    src: "man/figures/logo.png"
+  twitter:
+    card: summary
+    creator: "@gongcastro"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Visualizando las puntuaciones}

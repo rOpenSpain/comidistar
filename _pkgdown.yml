@@ -2,16 +2,50 @@ home:
   title: Una base de datos con las puntuaciones de las catas a ciegas de El Comidista.
   description: comidistar es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación del paquete está disponible en este link, junto con algunas viñetas y tutoriales.
 
+lang: es
 
 template:
-  opengraph:
+  bootstrap: 5
+  bootswatch: litera
+  bslib:
+    pkgdown-nav-height: 100px
+    base_font: {google: "Roboto"}
+    heading_font: {google: "Roboto"}
+    body_color: "black"
+    link_color: "#27521E"
+    primary: "#27521E"
+    bg: "white"
+    fg: "#27521E"
+
+navbar:
+  bg: primary
+  base_color: "white"
+  body_color: "black"
+  heading_color: "black"
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [search, github]
+  components:
     twitter:
-      creator: "@gongcastro"
-      card: summary_large_image
-  template:
-    bootstrap: 5
-    bootswatch: cyborg
-    theme: arrow-dark
+      icon: fa-twitter
+      href: http://twitter.com/gongcastro
+      aria-label: Twitter
+
+opengraph:
+  image:
+    src: man/figures/card.png
+    alt: "comidistar: Una base de datos con las puntuaciones de las catas a ciegas de El Comidista."
+  twitter:
+    creator: "@gongcastro"
+    site: "https://twitter.com/gongcastro"
+    card: summary_large_image
+
+authors:
+  Gonzalo Garcia-Castro:
+    href: "http://gongcastro.github.io"
+    html: "<img src='man/figures/profile.png' width=45><br>Gonzalo Garcia-Castro"
+
+
 
 reference:
 - title: "Base de datos"
