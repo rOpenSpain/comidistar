@@ -15,6 +15,14 @@ template:
     primary: "#27521E"
     bg: "white"
     fg: "#27521E"
+  opengraph:
+  image:
+    src: man/figures/card.png
+    alt: "comidistar: Una base de datos con las puntuaciones de las catas a ciegas de El Comidista."
+  twitter:
+    creator: "@gongcastro"
+    site: "https://twitter.com/gongcastro"
+    card: summary_large_image
 
 navbar:
   bg: primary
@@ -30,14 +38,7 @@ navbar:
       href: http://twitter.com/gongcastro
       aria-label: Twitter
 
-opengraph:
-  image:
-    src: man/figures/card.png
-    alt: "comidistar: Una base de datos con las puntuaciones de las catas a ciegas de El Comidista."
-  twitter:
-    creator: "@gongcastro"
-    site: "https://twitter.com/gongcastro"
-    card: summary_large_image
+
 
 authors:
   Gonzalo Garcia-Castro:
