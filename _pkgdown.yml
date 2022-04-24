@@ -6,7 +6,6 @@ lang: es
 
 template:
   bootstrap: 5
-  bootswatch: litera
   bslib:
     pkgdown-nav-height: 100px
     base_font: {google: "Roboto"}
