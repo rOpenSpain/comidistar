@@ -389,3 +389,11 @@ Mantequilla	Romain Fornell	6	Milbona (Lidl)	4
 Mantequilla	Romain Fornell	7	Cadí	4
 Mantequilla	Romain Fornell	8	Président	5.5
 Mantequilla	Romain Fornell	9	Kerrygold	4
+Hamburguesa vegetal	Marta Martínez	1	Beyond Burger	8.5
+Hamburguesa vegetal	Marta Martínez	2	Natur Soy	1.5
+Hamburguesa vegetal	Marta Martínez	3	Garden Gourmet	8
+Hamburguesa vegetal	Marta Martínez	4	Next Level Burger (Lidl)	5
+Hamburguesa vegetal	Marta Martínez	5	Gerblé	8
+Hamburguesa vegetal	Marta Martínez	6	Very Burger Delatierra	3
+Hamburguesa vegetal	Marta Martínez	7	Green Cuisine De Findus	5
+Hamburguesa vegetal	Marta Martínez	7	Burgveg	2.5
