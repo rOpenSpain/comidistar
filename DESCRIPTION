@@ -2,7 +2,7 @@ Type: Package
 Package: comidistar
 Title: Base de datos con las puntuaciones de las catas a ciegas de El
     Comidista
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: 
     c(person(given = "Gonzalo",
              family = "Garcia-Castro",
