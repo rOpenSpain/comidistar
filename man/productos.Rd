@@ -5,15 +5,15 @@
 \alias{productos}
 \title{Productos presentados en las Catas de Expertos de El Comidista}
 \format{
-Un tibble con 327 filas y 4 columnas:
-\describe{
-  \item{producto}{producto puntuado}
-  \item{marca}{marca a la que pertenece el producto}
-  \item{precio}{precio en euros por unidad de medida. La unidad de medida cambia a través de los diferentes productos. Por ejemplo, el caldo envasado se mide en 1000 ml, mientras que el cava se mide en PVP, es decir, en unidades de venta.}
+Un \link[tibble:tibble]{tibble::tibble} con 327 filas y 4 columnas:
+\itemize{
+\item producto: producto puntuado
+\item marca: marca a la que pertenece el producto
+\item precio: precio en euros por unidad de medida. La unidad de medida cambia a través de los diferentes productos. Por ejemplo, el caldo envasado se mide en 1000 ml, mientras que el cava se mide en PVP, es decir, en unidades de venta.
 }
 }
 \source{
-{\url{https://elcomidista.elpais.com/agr/catas_de_expertos/a}}
+\url{https://elcomidista.elpais.com/agr/catas_de_expertos/a}
 }
 \usage{
 productos

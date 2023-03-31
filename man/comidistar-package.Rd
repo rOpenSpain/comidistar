@@ -6,8 +6,6 @@
 \alias{comidistar-package}
 \title{comidistar: Base de datos con las puntuaciones de las catas a ciegas de El Comidista}
 \description{
-\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
-
 comidistar es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de El Comidista. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista.
 }
 \seealso{

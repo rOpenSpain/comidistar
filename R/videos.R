@@ -4,11 +4,9 @@
 #'  contiene este paquete.
 #'
 #' @format Un tibble con 38 filas y 3 columnas:
-#' \describe{
-#'   \item{producto}{producto puntuado}
-#'   \item{fecha}{fecha de subida del vídeo a YouTube}
-#'   \item{link}{URL del vídeo}
-#' }
+#' * producto: producto puntuado
+#' * fecha: fecha de subida del vídeo a YouTube
+#' * link: URL del vídeo
 #' @author Gonzalo Garcia-Castro
-#' @source {\url{https://elcomidista.elpais.com/agr/catas_de_expertos/a}}
+#' @source [https://elcomidista.elpais.com/agr/catas_de_expertos/a](https://elcomidista.elpais.com/agr/catas_de_expertos/a)
 "videos"
