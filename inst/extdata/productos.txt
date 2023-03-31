@@ -371,3 +371,38 @@ Tónica	Fentimans	8.24	1000 ml
 Tónica	Nordic Mist Original	4.55	1000 ml
 Tónica	Dia	0.97	1000 ml
 Tónica	Le Tribute Tonic Water	12.49	1000 ml
+Crema de cacao y avellanas	Milka	8.12	1000 g
+Crema de cacao y avellanas	Hacendado	5.38	1000 g
+Crema de cacao y avellanas	Nutella	11.85	1000 g
+Crema de cacao y avellanas	Eroski	7.48	1000 g
+Crema de cacao y avellanas	Carrefour	4.52	1000 g
+Crema de cacao y avellanas	Natruly	24.33	1000 g
+Crema de cacao y avellanas	Nocilla	8.31	1000 g
+Crema de cacao y avellanas	Lindt	19.95	1000 g
+Crema de cacao y avellanas	Choco Nussa (Lidl)	3.32	1000 g
+Polvorones	Delaviuda	18.31	1000 g
+Polvorones	La Muralla (Mercadona)	5.00	1000 g
+Polvorones	Felipe II	39.73	1000 g
+Polvorones	La Estepeña	21.56	1000 g
+Polvorones	Doña Jimena	21.80	1000 g
+Polvorones	Sensation	7.78	1000 g
+Polvorones	La Castaña	27.50	1000 g
+Polvorones	El Santo (Eroski)	5.00	1000 g
+Polvorones	1880	17.58	1000 g
+Sardinillas en aceite	Cuca	35.56	1000 g
+Sardinillas en aceite	Albo	40.12	1000 g
+Sardinillas en aceite	Isabel	31.50	1000 g
+Sardinillas en aceite	Rianxeira	22.10	1000 g
+Sardinillas en aceite	Paco Lafuente	46.59	1000 g
+Sardinillas en aceite	Escuris	34.23	1000 g
+Sardinillas en aceite	Ana María	31.98	1000 g
+Sardinillas en aceite	Frinsa	37.94	1000 g
+Garbanzos de bote	Luengo	3.25	1000 g
+Garbanzos de bote	Dia	2.38	1000 g
+Garbanzos de bote	Cidacos	3.63	1000 g
+Garbanzos de bote	El Corte Inglés	1.37	1000 g
+Garbanzos de bote	Pedro Luis	3.92	1000 g
+Garbanzos de bote	Campo Largo Lidl	1.65	1000 g
+Garbanzos de bote	Huerta de Carabaña	7.50	1000 g
+Garbanzos de bote	Hacendado	1.98	1000 g
+Garbanzos de bote	Gut Bio Aldi	1.73	1000 g

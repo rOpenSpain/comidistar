@@ -406,3 +406,48 @@ Tónica	Raiza Carrera	6	Fentimans	6.5
 Tónica	Raiza Carrera	7	Nordic Mist Original	5.5
 Tónica	Raiza Carrera	8	Dia	4
 Tónica	Raiza Carrera	9	Le Tribute Tonic Water	8
+Crema de cacao y avellanas	Nerea Prieto	1	Milka	5
+Crema de cacao y avellanas	Nerea Prieto	2	Hacendado	5
+Crema de cacao y avellanas	Nerea Prieto	3	Nutella	4
+Crema de cacao y avellanas	Nerea Prieto	4	Eroski	3
+Crema de cacao y avellanas	Nerea Prieto	5	Carrefour	4
+Crema de cacao y avellanas	Nerea Prieto	6	Natruly	2
+Crema de cacao y avellanas	Nerea Prieto	7	Nocilla	5
+Crema de cacao y avellanas	Nerea Prieto	8	Lindt	6
+Crema de cacao y avellanas	Nerea Prieto	9	Choco Nussa (Lidl)	2
+Polvorones	Laura Ferrer	1	Delaviuda	6
+Polvorones	Laura Ferrer	2	La Muralla (Mercadona)	7
+Polvorones	Laura Ferrer	3	Felipe II	6
+Polvorones	Laura Ferrer	4	La Estepeña	8
+Polvorones	Laura Ferrer	5	Doña Jimena	6.5
+Polvorones	Laura Ferrer	6	Sensation (Carrefour)	8.5
+Polvorones	Laura Ferrer	7	La Castaña	7
+Polvorones	Laura Ferrer	8	El Santo 8
+Polvorones	Laura Ferrer	9	1880	6
+Polvorones	Bea Ferrer	1	Delaviuda	6
+Polvorones	Bea Ferrer	2	La Muralla (Mercadona)	6.5
+Polvorones	Bea Ferrer	3	Felipe II	6
+Polvorones	Bea Ferrer	4	La Estepeña	7.5
+Polvorones	Bea Ferrer	5	Doña Jimena	6.5
+Polvorones	Bea Ferrer	6	Sensation (Carrefour)	8.5
+Polvorones	Bea Ferrer	7	La Castaña	7	
+Polvorones	Bea Ferrer	8	El Santo	7
+Polvorones	Bea Ferrer	9	1880	6.5
+Sardinillas en aceite	Paola Fornasaro	1	Cuca	5	
+Sardinillas en aceite	Paola Fornasaro	2	Albo	2
+Sardinillas en aceite	Paola Fornasaro	3	Isabel	4
+Sardinillas en aceite	Paola Fornasaro	4	Rianxeira	1
+Sardinillas en aceite	Paola Fornasaro	5	Paco Lafuente	7
+Sardinillas en aceite	Paola Fornasaro	6	Escuris	6
+Sardinillas en aceite	Paola Fornasaro	7	Ana María	4
+Sardinillas en aceite	Paola Fornasaro	8	Frinsa	6
+Garbanzos de bote	Marc Puig-Pey	1	Luengo	2
+Garbanzos de bote	Marc Puig-Pey	2	Dia	3
+Garbanzos de bote	Marc Puig-Pey	3	Cidacos	5
+Garbanzos de bote	Marc Puig-Pey	4	El Corte Inglés	5
+Garbanzos de bote	Marc Puig-Pey	5	Pedro Luis	6.5
+Garbanzos de bote	Marc Puig-Pey	6	Campo Largo Lidl	6
+Garbanzos de bote	Marc Puig-Pey	7	Huerta de Carabaña	5
+Garbanzos de bote	Marc Puig-Pey	8	Hacendado	4
+Garbanzos de bote	Marc Puig-Pey	9	Gut Bio Aldi	4
+
