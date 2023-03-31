@@ -22,7 +22,7 @@ puntuaciones
 }
 \description{
 Incluye las putuaciones desagregadas de cada persona del jurado a cada producto
-que haya puntuado. También incluye información sobre la identidaad del jurado
+que haya puntuado. También incluye información sobre la identidad del jurado
 la marca del producto puntuado y el orden en el que las diferentes marcas de
 cada producto fueron presentadas durante la cata. Cada fila corresponde a una
 puntuación de una persona a un producto de una marca específica. Un producto
