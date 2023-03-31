@@ -15,5 +15,6 @@
 #' * marca: marca a la que pertenece el producto
 #' * puntuacion: puntuación numérica comprendida entre 0 y 10 asignada por la persona del jurado al producto
 #' @author Gonzalo Garcia-Castro
+#' @seealso [videos], [puntuaciones]
 #' @source [https://elcomidista.elpais.com/agr/catas_de_expertos/a](https://elcomidista.elpais.com/agr/catas_de_expertos/a)
 "puntuaciones"

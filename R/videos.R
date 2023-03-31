@@ -8,5 +8,6 @@
 #' * fecha: fecha de subida del vídeo a YouTube
 #' * link: URL del vídeo
 #' @author Gonzalo Garcia-Castro
+#' @seealso [productos], [puntuaciones]
 #' @source [https://elcomidista.elpais.com/agr/catas_de_expertos/a](https://elcomidista.elpais.com/agr/catas_de_expertos/a)
 "videos"

@@ -22,6 +22,9 @@ productos
 Incluye datos de cada producto presentado. Cada fila corresponde a un producto
 de una marca diferente.
 }
+\seealso{
+\link{puntuaciones}, \link{videos}
+}
 \author{
 Gonzalo Garcia-Castro
 }

@@ -22,6 +22,9 @@ videos
 Incluye la fecha y URL de los vídeos de los que fueron extraídos los datos que
 contiene este paquete.
 }
+\seealso{
+\link{productos}, \link{puntuaciones}
+}
 \author{
 Gonzalo Garcia-Castro
 }
