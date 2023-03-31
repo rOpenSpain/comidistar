@@ -1,0 +1,10 @@
+pandoc: 2.19.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  puntuaciones: puntuaciones.html
+last_built: 2023-03-31T22:04Z
+urls:
+  reference: https://gongcastro.github.io/comidistar/reference
+  article: https://gongcastro.github.io/comidistar/articles
+
