@@ -1,59 +1,62 @@
-url: https://gongcastro.github.io/comidistar
-
+url: https://gongcastro.github.io/comidistar/
 home:
   title: Una base de datos con las puntuaciones de las catas a ciegas de El Comidista.
-  description: comidistar es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación del paquete está disponible en este link, junto con algunas viñetas y tutoriales.
-
+  description: comidistar es un paquete de R que contiene una base de datos con las
+    puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones
+    para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y
+    datos adicionales sobre los productos de las catas fueron transcritos manualmente
+    a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación
+    del paquete está disponible en este link, junto con algunas viñetas y tutoriales.
 lang: es
-
 template:
   bootstrap: 5
   bslib:
     pkgdown-nav-height: 100px
-    body_color: "black"
-    link_color: "#27521E"
-    primary: "#27521E"
-    bg: "white"
-    fg: "#27521E"
+    body_color: black
+    link_color: '#27521E'
+    primary: '#27521E'
+    bg: white
+    fg: '#27521E'
   opengraph:
     image:
       src: man/figures/card.png
-      alt: "comidistar: Una base de datos con las puntuaciones de las catas a ciegas de El Comidista."
+      alt: 'comidistar: Una base de datos con las puntuaciones de las catas a ciegas
+        de El Comidista.'
     twitter:
-      creator: "@gongcastro"
+      creator: '@gongcastro'
       card: summary_large_image
-
 navbar:
   bg: primary
-  base_color: "white"
-  body_color: "black"
-  heading_color: "black"
+  base_color: white
+  body_color: black
+  heading_color: black
   structure:
-    left:  [intro, reference, articles, tutorials, news]
-    right: [search, github]
+    left:
+    - intro
+    - reference
+    - articles
+    - tutorials
+    - news
+    right:
+    - search
+    - github
   components:
     twitter:
       icon: fa-twitter
       href: http://twitter.com/gongcastro
       aria-label: Twitter
-
-
-
 authors:
   Gonzalo Garcia-Castro:
-    href: "http://gongcastro.github.io"
-    html: "Gonzalo Garcia-Castro<br><img src='man/figures/profile.png' width=45>"
-
-
-
+    href: http://gongcastro.github.io
+    html: Gonzalo Garcia-Castro<br><img src='man/figures/profile.png' width=45>
 reference:
-- title: "Base de datos"
-  desc: "Tablas con los datos de El Comidista"
+- title: Base de datos
+  desc: Tablas con los datos de El Comidista
 - contents:
   - puntuaciones
   - productos
   - videos
-- title: "Otros"
-  desc: "Funciones adicionales para extraer y visualizar los datos"
-- contents:
-  - starts_with("theme_")
+- title: Otros
+  desc: Funciones adicionales para extraer y visualizar los datos
+- contents: starts_with("theme_")
+
