@@ -11,7 +11,7 @@ Un tibble con 363 filas y 5 columnas:
 \item persona: nombre y apellidos de la persona del jurado a la que corresponde la puntuación
 \item orden: orden numérico en e lque el producto fue presentado
 \item marca: marca a la que pertenece el producto
-\item puntuacion: puntuación numérica comprendida entre 0 y 10 asignada por la persona del jurado al producto
+\item puntuacion: puntuación numérica comprendida entre 0 y 10, asignada por la persona del jurado al producto
 }
 }
 \source{

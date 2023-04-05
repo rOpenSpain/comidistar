@@ -8,6 +8,7 @@
 
 * Corrige codificación UTF-8 en los nombres de los productos del gráfico en la viñeta
 * Usa Markdown para generar la documentación de Roxygen2
+* Corrige el enlace al video de 'Agua'
 
 # comidistar 0.2.0
 

@@ -1,6 +1,7 @@
 library(tibble)
 
 file_path <- system.file("extdata", "videos.txt", package = "comidistar")
+
 videos <- as_tibble(
     read.delim(
         file_path,
@@ -8,7 +9,7 @@ videos <- as_tibble(
         col.names = c("producto", "fecha", "link")
     )
 )
+
 videos$fecha <- as.Date(videos$fecha, format = "%d/%m/%Y")
 
-# load data
 usethis::use_data(videos, overwrite = TRUE)
