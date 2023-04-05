@@ -52,7 +52,7 @@ Por último, visualizamos los datos:
 
 ```{r puntuaciones, warning=FALSE, fig.height=8, fig.width=7, fig.cap="Distribuci\u00f3n de las puntuaciones de las catas a ciegas para cada producto. Distribuci\u00f3n de las puntuaciones (eje X) de cada producto (eje Y). El punto y su intervalo (en negro) indican la media y el intervalos que contiene el 95\\% de las puntuaciones de la distribuci\u00f3n. Las l\u00edneas verticales dentro de cada distribuciu00f3n indican las puntuaciones individuales para cada marca, por parte de una de las personas del jurado."}
 puntuaciones %>% 
-    count(producto_n, puntuacion) %>% 
+    count(producto_n, puntuacion) |> 
     ggplot(aes(x = puntuacion, y = reorder(producto_n, puntuacion))) +  
     geom_vline(xintercept = 5, colour = "grey", size = 1) +
     geom_point(aes(size = n), stroke = 0.5, colour = "orange") +
