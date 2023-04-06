@@ -2,7 +2,7 @@ producto	marca	precio	unidad
 Fuet	Tarradellas	11.06	1000 g
 Fuet	El Pozo	11.93	1000 g
 Fuet	Argal	12.43	1000 g
-Fuet	Can Dur n	12.08	1000 g
+Fuet	Can Durán	12.08	1000 g
 Fuet	Riera Ordeix	28.75	1000 g
 Fuet	Can Salgot	28.61	1000 g
 Fuet	Navidul	12.29	1000 g
@@ -11,19 +11,19 @@ Fuet	Noel	11.47	1000 g
 Fuet	Tarradellas	11.06	1000 g
 Fuet	El Pozo	11.93	1000 g
 Fuet	Argal	12.43	1000 g
-Fuet	Can Dur n	12.08	1000 g
+Fuet	Can Durán	12.08	1000 g
 Fuet	Riera Ordeix	28.75	1000 g
 Fuet	Can Salgot	28.61	1000 g
 Fuet	Navidul	12.29	1000 g
 Fuet	Casademont	9.75	1000 g
 Fuet	Noel	11.47	1000 g
-Aceite de oliva virgen extra	Hacendado (Mercadona)	4.92	1000 ml
+Aceite de oliva virgen extra	Hacendado Gran Selección (Mercadona)	4.92	1000 ml
 Aceite de oliva virgen extra	Borges	6.23	1000 ml
 Aceite de oliva virgen extra	Coosur	4.49	1000 ml
 Aceite de oliva virgen extra	Maestros de Hojiblanca	4.99	1000 ml
 Aceite de oliva virgen extra	Oleostepa	4.99	1000 ml
-Aceite de oliva virgen extra	La Espa ola	5.32	1000 ml
-Aceite de oliva virgen extra	Marqu s de Gri  n	14.58	1000 ml
+Aceite de oliva virgen extra	La Española	5.32	1000 ml
+Aceite de oliva virgen extra	Marqués de Griñán	14.58	1000 ml
 Aceite de oliva virgen extra	Carbonell	4.99	1000 ml
 Aceite de oliva virgen extra	De Nuestra Tierra (Carrefour)	7.35	1000 ml
 Pan de molde	Bimbo	0.4	100 g
@@ -34,61 +34,61 @@ Pan de molde	Carrefour	0.35	100 g
 Pan de molde	Aldi	0.27	100 g
 Pan de molde	Eroski	0.12	100 g
 Pan de molde	Alcampo	0.2	100 g
-At n de lata	Ortiz	40.12	1000 g
-At n de lata	Consorcio	27.78	1000 g
-At n de lata	Palacio de Oriente	23.63	1000 g
-At n de lata	Tejero	19.85	1000 g
-At n de lata	Isabel	17.42	1000 g
-At n de lata	Albo	31.1	1000 g
-At n de lata	Cuca	26.88	1000 g
-At n de lata	Calvo	22.73	1000 g
-At n de lata	Campos	34	1000 g
+Atún de lata	Ortiz	40.12	1000 g
+Atún de lata	Consorcio	27.78	1000 g
+Atún de lata	Palacio de Oriente	23.63	1000 g
+Atún de lata	Tejero	19.85	1000 g
+Atún de lata	Isabel	17.42	1000 g
+Atún de lata	Albo	31.1	1000 g
+Atún de lata	Cuca	26.88	1000 g
+Atún de lata	Calvo	22.73	1000 g
+Atún de lata	Campos	34	1000 g
 Mayonesa	Heinz	3.02	1000 g
 Mayonesa	Ybarra	3.87	1000 g
 Mayonesa	Santa Teresa	13.28	1000 g
-Mayonesa	Calv 	4.76	1000 g
+Mayonesa	Calvé 	4.76	1000 g
 Mayonesa	Prima	3.2	1000 g
 Mayonesa	Hellmann's	4.4	1000 g
 Mayonesa	Kraft	2.62	1000 g
 Mayonesa	Musa	3.76	100 g
-Chocolate	Nestl 	0.96	100 g
+Chocolate	Nestlé 	0.96	100 g
 Chocolate	Suchard	2.21	100 g
 Chocolate	Lindt	2.35	100 g
 Chocolate	Hacendado (Mercadona)	1.42	100 g
 Chocolate	La Casa	1.42	100 g
 Chocolate	Valrhona	6	100 g
-Chocolate	Aliada (El Corte Ingl s)	0.69	100 g
+Chocolate	Aliada (El Corte Inglés)	0.69	100 g
 Chocolate	Valor	0.86	100 g
-Chocolate	Fin Carr  (Lidl)	0.49	100 g
-Turr n	El Almendro	12.28	1000 g
-Turr n	El Lobo	13	1000 g
-Turr n	Delaviuda	14.67	1000 g
-Turr n	1880	20.6	1000 g
-Turr n	Suchard	11.5	1000 g
-Turr n	Nestl 	10	1000 g
-Turr n	Aliada (El Corte Ingl s)	5.33	1000 g
-Turr n	Hacendado (Mercadona)	8.15	1000 g
-Turr n	Carrefour	10.4	1000 g
-Turr n	Dia	8.3	1000 g
+Chocolate	Fin Carré  (Lidl)	0.49	100 g
+Turrón	El Almendro	12.28	1000 g
+Turrón	El Lobo	13	1000 g
+Turrón	Delaviuda	14.67	1000 g
+Turrón	1880	20.6	1000 g
+Turrón	Suchard	11.5	1000 g
+Turrón	Nestlé 	10	1000 g
+Turrón	Aliada (El Corte Inglés)	5.33	1000 g
+Turrón	Hacendado (Mercadona)	8.15	1000 g
+Turrón	Carrefour	10.4	1000 g
+Turrón	Dia	8.3	1000 g
 Pizza	Chef Select (Lidl)	1.99	Unidad
 Pizza	Casa Tarradellas	2.7	Unidad
-Pizza	El Corte Ingl s	2.39	Unidad
+Pizza	El Corte Inglés	2.39	Unidad
 Pizza	Buitoni	3.19	Unidad
 Pizza	Carrefour	1.99	Unidad
 Pizza	Dr. Oetker	3.15	Unidad
 Pizza	Dia	2.09	Unidad
-Pizza	Campofr o	2.6	Unidad
+Pizza	Campofrío	2.6	Unidad
 Gazpacho	Hacendado (Mercadona)	1.45	1000 ml
 Gazpacho	Chef Select (Lidl)	1.39	1000 ml
 Gazpacho	Carrefour	1.62	1000 ml
 Gazpacho	Eroski	1.49	1000 ml
 Gazpacho	Alvalle	3.45	1000 ml
-Gazpacho	El Corte Ingl s	2.5	1000 ml
+Gazpacho	El Corte Inglés	2.5	1000 ml
 Gazpacho	Santa Teresa	3.42	1000 ml
 Gazpacho	Dia	1.59	1000 ml
-Gazpacho	Don Sim n	2	1000 ml
-Helado de chocolate	H agen Dazs	16.22	1000 g
-Helado de chocolate	El Corte Ingl s	2.25	1000 ml
+Gazpacho	Don Simón	2	1000 ml
+Helado de chocolate	Häagen Dazs	16.22	1000 g
+Helado de chocolate	El Corte Inglés	2.25	1000 ml
 Helado de chocolate	Carte D'Or	5.59	1000 g
 Helado de chocolate	La Lechera	7.82	1000 g
 Helado de chocolate	Ben&Jerry's	15.66	1000 g
@@ -117,19 +117,19 @@ Yogur griego	Hacendado (Mercadona)	1.33	1000 g
 Yogur griego	Cantero de Letur	7.48	1000 g
 Yogur griego	Casa Grande de Xanceda	6.38	1000 g
 Yogur griego	Milbona (Lidl)	1.9	1000 g
-Yogur griego	Yaos (Netstl )	4.52	1000 g
+Yogur griego	Yaos (Netstlé)	4.52	1000 g
 Yogur griego	Reina	2.5	1000 g
 Yogur griego	Milsani (Aldi)	1.33	1000 g
-Tortilla	El Corte Ingl s	3.31	1000 g
+Tortilla	El Corte Inglés	3.31	1000 g
 Tortilla	Hacendado (Mercadona)	3	1000 g
 Tortilla	Dia	3	1000 g
 Tortilla	Coren	4.78	1000 g
 Tortilla	Chef Select (Lidl)	2.92	1000 g
 Tortilla	Auchan (Alcampo)	2.75	1000 g
-Tortilla	La cocina de Sen n	13.89	1000 g
+Tortilla	La cocina de Senén	13.89	1000 g
 Tortilla	Palacios	7	1000 g
 Tortilla	Eroski	3.58	1000 g
-Patatas fritas	Aliada (El Corte Ingl s)	0.35	100 g
+Patatas fritas	Aliada (El Corte Inglés)	0.35	100 g
 Patatas fritas	Lay's	0.68	100 g
 Patatas fritas	Snack day (Lidl)	0.32	100 g
 Patatas fritas	Bonilla	1.99	100 g
@@ -140,9 +140,9 @@ Patatas fritas	Dia	0.34	100 g
 Patatas fritas	Eroski	0.34	100 g
 Yogur	Hacendado (Mercadona)	0.95	1000 g
 Yogur	Eroski	1	1000 g
-Yogur	Milbona	1.19	1000 g
+Yogur	Milbona (Lidl)	1.19	1000 g
 Yogur	Pastoret	5.2	1000 g
-Yogur	Aliada (El Corte Ingl s)	1.1	1000 g
+Yogur	Aliada (El Corte Inglés)	1.1	1000 g
 Yogur	Danone	2.18	1000 g
 Yogur	Carrefour	1	1000 g
 Yogur	Dia	0.94	1000 g
@@ -153,7 +153,7 @@ Caldo envasado	Aneto	3.65	1000 ml
 Caldo envasado	Dia	0.9	1000 ml
 Caldo envasado	Hacendado (Mercadona)	0.9	1000 ml
 Caldo envasado	Gallina Blanca	1.8	1000 ml
-Caldo envasado	Aliada (El Corte Ingl s)	0.9	1000 ml
+Caldo envasado	Aliada (El Corte Inglés)	0.9	1000 ml
 Crema de verduras	Ametller	4.1	1000 ml
 Crema de verduras	Knorr	2.95	1000 ml
 Crema de verduras	Gvtarra	3.38	1000 ml
@@ -162,13 +162,13 @@ Crema de verduras	Pedro Luis	5.75	1000 ml
 Crema de verduras	Santa Teresa	5.32	1000 ml
 Crema de verduras	Carretilla	5.65	1000 ml
 Crema de verduras	Hacendado (Mercadona)	3.54	1000 ml
-Aceitunas	El Corte Ingl s	8.47	1000 g
+Aceitunas	El Corte Inglés	8.47	1000 g
 Aceitunas	Jolca	7.8	1000 g
 Aceitunas	Hacendado (Mercadona)	4	1000 g
 Aceitunas	Alcampo	4.46	1000 g
 Aceitunas	Serpis	8.6	1000 g
 Aceitunas	El Xillu	19	1000 g
-Aceitunas	La Espa ola	9.47	1000 g
+Aceitunas	La Española	9.47	1000 g
 Aceitunas	Carrefour	5.6	1000 g
 Aceitunas	Dani	11.8	1000 g
 Hummus	Argal	0.72	100 g
@@ -179,51 +179,51 @@ Hummus	Chef Select (Lidl)	0.44	100 g
 Hummus	La Piara	1.8	100 g
 Hummus	Alfez	1.84	100 g
 Hummus	Casa Morando (Aldi)	0.72	100 g
-Jam n York	Tarradellas	10.73	1000 g
-Jam n York	Realvalle (Lidl)	7.96	1000 g
-Jam n York	Argal	12	1000 g
-Jam n York	Hacendado (Mercadona)	7.95	1000 g
-Jam n York	Campofr o	10	1000 g
-Jam n York	Carrefour	7.4	1000 g
-Jam n York	El Pozo	7.72	1000 g
-Jam n York	La Selva	16.9	1000 g
-Jam n York	El Corte Ingl s	8.33	1000 g
-Caf  (c psula)	Nespresso	0.36	Unidad
-Caf  (c psula)	Fortaleza	0.32	Unidad
-Caf  (c psula)	Marcilla	0.25	Unidad
-Caf  (c psula)	Bellarom (Lidl)	0.19	Unidad
-Caf  (c psula)	Nescaf 	0.29	Unidad
-Caf  (c psula)	Prosol (Mercadona)	0.13	Unidad
-Caf  (c psula)	L'Arome	0.35	Unidad
-Caf  (c psula)	Carrefour	0.2	Unidad
-Caf  (c psula)	Carte Noir	0.31	Unidad
+Jamón York	Casa Tarradellas	10.73	1000 g
+Jamón York	Realvalle (Lidl)	7.96	1000 g
+Jamón York	Argal	12	1000 g
+Jamón York	Hacendado (Mercadona)	7.95	1000 g
+Jamón York	Campofrío	10	1000 g
+Jamón York	Carrefour	7.4	1000 g
+Jamón York	El Pozo	7.72	1000 g
+Jamón York	La Selva	16.9	1000 g
+Jamón York	El Corte Inglés	8.33	1000 g
+Café (cápsula)	Nespresso	0.36	Unidad
+Café (cápsula)	Fortaleza	0.32	Unidad
+Café (cápsula)	Marcilla	0.25	Unidad
+Café (cápsula)	Bellarom (Lidl)	0.19	Unidad
+Café (cápsula)	Nescafé	0.29	Unidad
+Café (cápsula)	Prosol (Mercadona)	0.13	Unidad
+Café (cápsula)	L'Arome	0.35	Unidad
+Café (cápsula)	Carrefour	0.2	Unidad
+Café (cápsula)	Carte Noir	0.31	Unidad
 Macarrones	Eroski	0.98	1000 g
 Macarrones	Gallo	1.78	1000 g
 Macarrones	Garofalo	2.94	1000 g
 Macarrones	Barilla	2.9	1000 g
 Macarrones	Dia	1.1	1000 g
-Macarrones	Aliada (El Corte Ingl s)	1.02	1000 g
+Macarrones	Aliada (El Corte Inglés)	1.02	1000 g
 Macarrones	Hacendado (Mercadona)	0.98	1000 g
 Macarrones	De Cecco	3	1000 g
 Macarrones	Comino (Lidl)	0.69	1000 g
 Leche	Central Lechera Asturiana	0.79	1000 ml
 Leche	Pascual	0.89	1000 ml
-Leche	Pr sident	1.05	1000 ml
+Leche	Président	1.05	1000 ml
 Leche	Puleva Eco	1.39	1000 ml
 Leche	Ato Eco	1.29	1000 ml
 Leche	El Castillo	0.83	1000 ml
 Leche	Celta	0.8	1000 ml
 Leche	Unicla	0.99	1000 ml
 Leche	Muuu	0.79	1000 ml
-T  (bolsita)	Hornimans	0.06	Unidad
-T  (bolsita)	Teapigs	0.44	Unidad
-T  (bolsita)	Tetley	0.09	Unidad
-T  (bolsita)	PG Tips	0.04	Unidad
-T  (bolsita)	Lipton	0.08	Unidad
-T  (bolsita)	Sans & Sans	0.42	Unidad
-T  (bolsita)	Twinings	0.13	Unidad
-T  (bolsita)	Pompadour	0.06	Unidad
-Cerveza	Mahou Cl sica	0.53	333 ml
+Té (bolsita)	Hornimans	0.06	Unidad
+Té (bolsita)	Teapigs	0.44	Unidad
+Té (bolsita)	Tetley	0.09	Unidad
+Té (bolsita)	PG Tips	0.04	Unidad
+Té (bolsita)	Lipton	0.08	Unidad
+Té (bolsita)	Sans & Sans	0.42	Unidad
+Té (bolsita)	Twinings	0.13	Unidad
+Té (bolsita)	Pompadour	0.06	Unidad
+Cerveza	Mahou Clásica	0.53	333 ml
 Cerveza	Estrella Galicia	0.66	333 ml
 Cerveza	Amstel	0.34	333 ml
 Cerveza	Alhambra Tradicional	0.46	333 ml
@@ -234,16 +234,16 @@ Cerveza	Ambar	0.61	333 ml
 Cerveza	Heineken	0.69	333 ml
 Croquetas	Maheso	5.63	1000 g
 Croquetas	La Cocinera	8.5	1000 g
-Croquetas	Selecci n (Carrefour)	8.83	1000 g
-Croquetas	Sen n	19.95	1000 g
+Croquetas	Selección (Carrefour)	8.83	1000 g
+Croquetas	Senén	19.95	1000 g
 Croquetas	Alcampo	2	1000 g
 Croquetas	Fridela	13.65	1000 g
 Croquetas	Hacendado (Mercadona)	1.98	1000 g
 Croquetas	Monissa (Lidl)	1.9	1000 g
-Croquetas	El Corte Ingl s	4.38	1000 g
+Croquetas	El Corte Inglés	4.38	1000 g
 Panettone	Giuseppe (Mercadona)	5.2	1000 g
 Panettone	Favorita (Lidl)	3.99	1000 g
-Panettone	Saronno (El Crote Ingles)	49	1000 g
+Panettone	Saronno (El Corte Inglés)	49	1000 g
 Panettone	Bauli	13.06	1000 g
 Panettone	Motta	9.25	1000 g
 Panettone	Tre Marie	16.9	1000 g
@@ -262,9 +262,9 @@ Salsa de tomate	Orlando	0.36	100 g
 Salsa de tomate	Hida	0.41	100 g
 Salsa de tomate	Hacendado (Mercadona)	0.15	100 g
 Salsa de tomate	Alcampo	0.24	100 g
-Salsa de tomate	Solis	0.31	100 g
+Salsa de tomate	Solís	0.31	100 g
 Salsa de tomate	Pedro Luis	0.69	100 g
-Salsa de tomate	El Corte Ingl s	0.39	100 g
+Salsa de tomate	El Corte Inglés	0.39	100 g
 Sushi	Flete (Aldi)	1.77	100 g
 Sushi	Sushita	3.17	100 g
 Sushi	La Sirena	2.5	100 g
@@ -290,13 +290,13 @@ Cava	Segura Viudas	7.02	Unidad
 Cava	Agusti Torrello Mata	9.9	Unidad
 Cava	Via de la Plata	4.97	Unidad
 Cava	Freixenet	7.8	Unidad
-Cava	Bach Extr simo	3.85	Unidad
+Cava	Bach Extrísimo	3.85	Unidad
 Agua	Sevilla	NA	NA
 Agua	Mallorca	NA	NA
 Agua	Valencia	NA	NA
 Agua	Zaragoza	NA	NA
 Agua	Bilbao	NA	NA
-Agua	M laga	NA	NA
+Agua	Málaga	NA	NA
 Agua	Madrid	NA	NA
 Agua	Barcelona	NA	NA
 Agua	Murcia	NA	NA
@@ -309,23 +309,23 @@ Vermut	Alvini (Dia)	2.09	1000 ml
 Vermut	Lustau	17.85	1000 ml
 Vermut	Martini	7.99	1000 ml
 Vermut	Vernotti	2.41	1000 ml
-Salmorejo	El Corte Ingl s	2.5	1000 ml
+Salmorejo	El Corte Inglés	2.5	1000 ml
 Salmorejo	Alvalle	3.25	1000 ml
 Salmorejo	Santa Teresa	5.78	1000 ml
 Salmorejo	Salteras	3.89	1000 ml
 Salmorejo	Hacendado (Mercadona)	3.3	1000 ml
-Salmorejo	Garc a Mill n (Aldi)	2.95	1000 ml
+Salmorejo	García Millán (Aldi)	2.95	1000 ml
 Salmorejo	La Despensa	7.5	1000 ml
-Salmorejo	Don Sim n	3	1000 ml
-Caf  (molido)	Nestl  Bonka	8.76	1000 g
-Caf  (molido)	El Corte Ingl s	7.8	1000 g
-Caf  (molido)	Marcilla	9.96	1000 g
-Caf  (molido)	Saimaza	8.76	1000 g
-Caf  (molido)	Lavazza	14.36	1000 g
-Caf  (molido)	Hacendado (Mercadona)	4.2	1000 g
-Caf  (molido)	Fortaleza	10.36	1000 g
-Caf  (molido)	Saula	24.76	1000 g
-Caf  (molido)	Carrefour	7.96	1000 g
+Salmorejo	Don Simón	3	1000 ml
+Café (molido)	Nestlé  Bonka	8.76	1000 g
+Café (molido)	El Corte Inglés	7.8	1000 g
+Café (molido)	Marcilla	9.96	1000 g
+Café (molido)	Saimaza	8.76	1000 g
+Café (molido)	Lavazza	14.36	1000 g
+Café (molido)	Hacendado (Mercadona)	4.2	1000 g
+Café (molido)	Fortaleza	10.36	1000 g
+Café (molido)	Saula	24.76	1000 g
+Café (molido)	Carrefour	7.96	1000 g
 Mozzarella	Galvani	19.92	1001 g
 Mozzarella	Ponte Reale	14.56	1000 g
 Mozzarella	Zanetti	16	1000 g
@@ -336,34 +336,34 @@ Mozzarella	Central Lechera Asturiana	10	1000 g
 Mozzarella	Lovilio (Lidl)	6	1000 g
 Mozzarella	Consum	6.4	1000 g
 Mozzarella	Carrefour	6.24	1000 g
-Turr n blando	El Almendro	19.12	1000 g
-Turr n blando	1880	39	1000 g
-Turr n blando	Vicens	23.18	1000 g
-Turr n blando	Virginias	27.5	1000 g
-Turr n blando	El Lobo	19.2	1000 g
-Turr n blando	Pablo Garrig s Ib  ez	43	1000 g
-Turr n blando	Delaviuda	19.12	1000 g
-Turr n blando	Pic 	16.5	1000 g
+Turrón blando	El Almendro	19.12	1000 g
+Turrón blando	1880	39	1000 g
+Turrón blando	Vicens	23.18	1000 g
+Turrón blando	Virginias	27.5	1000 g
+Turrón blando	El Lobo	19.2	1000 g
+Turrón blando	Pablo Garrigós Ibáñez	43	1000 g
+Turrón blando	Delaviuda	19.12	1000 g
+Turrón blando	Picó 	16.5	1000 g
 Mantequilla	Pascual	8.64	1000 g
 Mantequilla	Central Lechera Asturiana	9.4	1000 g
 Mantequilla	Hacendado (Mercadona)	6.6	1000 g
 Mantequilla	De Nuestra Tierra (Carrefour)	18.76	1000 g
 Mantequilla	Burgo de Arias	10.36	1000 g
 Mantequilla	Milbona (Lidl)	8.5	1000 g
-Mantequilla	Cad 	14	1000 g
-Mantequilla	Pr sident	13.32	1000 g
+Mantequilla	Cadí 	14	1000 g
+Mantequilla	Président	13.32	1000 g
 Mantequilla	Kerrygold	14.25	1000 g
 Hamburguesa vegetal	Beyond Burger	21.90	1000 g
 Hamburguesa vegetal	Natur Soy	20	1000 g
 Hamburguesa vegetal	Garden Gourmet	19.42	1000 g
-Hamburguesa vegetal	Next Level Burger	8.81	1000 g
-Hamburguesa vegetal	Gerbl 	24.95	1000 g
+Hamburguesa vegetal	Next Level Burger (Lidl)	8.81	1000 g
+Hamburguesa vegetal	Gerblé 	24.95	1000 g
 Hamburguesa vegetal	Heura	20.41	1000 g
 Hamburguesa vegetal	Very Burger Delatierra	18.86	1000 g
 Hamburguesa vegetal	Green Cuisine De Findus	19.45	1000 g
 Hamburguesa vegetal	Burgveg	16.75	1000 g
 Tónica	Fever Tree	6.75	1000 ml
-Tónica	Hacendado	1.46	1000 ml
+Tónica	Hacendado (Mercadona)	1.46	1000 ml
 Tónica	Schweppes	4.00	1000 ml
 Tónica	Seventeen	5.00	1000 ml
 Tónica	Kas Blue Tonic	2.92	1000 ml
@@ -372,7 +372,7 @@ Tónica	Nordic Mist Original	4.55	1000 ml
 Tónica	Dia	0.97	1000 ml
 Tónica	Le Tribute Tonic Water	12.49	1000 ml
 Crema de cacao y avellanas	Milka	8.12	1000 g
-Crema de cacao y avellanas	Hacendado	5.38	1000 g
+Crema de cacao y avellanas	Hacendado (Mercadona)	5.38	1000 g
 Crema de cacao y avellanas	Nutella	11.85	1000 g
 Crema de cacao y avellanas	Eroski	7.48	1000 g
 Crema de cacao y avellanas	Carrefour	4.52	1000 g
@@ -385,7 +385,7 @@ Polvorones	La Muralla (Mercadona)	5.00	1000 g
 Polvorones	Felipe II	39.73	1000 g
 Polvorones	La Estepeña	21.56	1000 g
 Polvorones	Doña Jimena	21.80	1000 g
-Polvorones	Sensation	7.78	1000 g
+Polvorones	Sensation (Carrefour)	7.78	1000 g
 Polvorones	La Castaña	27.50	1000 g
 Polvorones	El Santo (Eroski)	5.00	1000 g
 Polvorones	1880	17.58	1000 g
@@ -402,7 +402,7 @@ Garbanzos de bote	Dia	2.38	1000 g
 Garbanzos de bote	Cidacos	3.63	1000 g
 Garbanzos de bote	El Corte Inglés	1.37	1000 g
 Garbanzos de bote	Pedro Luis	3.92	1000 g
-Garbanzos de bote	Campo Largo Lidl	1.65	1000 g
+Garbanzos de bote	Campo Largo (Lidl)	1.65	1000 g
 Garbanzos de bote	Huerta de Carabaña	7.50	1000 g
-Garbanzos de bote	Hacendado	1.98	1000 g
-Garbanzos de bote	Gut Bio Aldi	1.73	1000 g
+Garbanzos de bote	Hacendado (Mercadona)	1.98	1000 g
+Garbanzos de bote	Gut Bio (Aldi)	1.73	1000 g
