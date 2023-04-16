@@ -10,9 +10,9 @@ Authors@R:
              comment = c(ORCID = "0000-0002-8553-4209")))
 Description: Base de datos documentada con las puntuaciones de las catas a ciegas de El Comidista, información sobre los productos y su precio, y metadatos sobre el vídeo subido a YouTube.
 License: MIT + file LICENSE
-URL: https://ropensci.github.io/comidistar/,
-    https://github.com/ropensci/comidistar/
-BugReports: https://github.com/ropensci/comidistar/issues
+URL: https://ropenspain.github.io/comidistar/,
+    https://github.com/ropenspain/comidistar/
+BugReports: https://github.com/ropenspain/comidistar/issues
 Depends: 
     R (>= 2.10)
 Imports: 
