@@ -1,22 +1,14 @@
-url: https://gongcastro.github.io/comidistar/
+url: https://ropenspain.github.io/comidistar/
 home:
   title: Una base de datos con las puntuaciones de las catas a ciegas de El Comidista.
-  description: comidistar es un paquete de R que contiene una base de datos con las
-    puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones
+  description: Base de datos con las puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones
     para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y
     datos adicionales sobre los productos de las catas fueron transcritos manualmente
     a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación
     del paquete está disponible en este link, junto con algunas viñetas y tutoriales.
 lang: es
 template:
-  bootstrap: 5
-  bslib:
-    pkgdown-nav-height: 100px
-    body_color: black
-    link_color: '#27521E'
-    primary: '#27521E'
-    bg: white
-    fg: '#27521E'
+  package: rostemplate
   opengraph:
     image:
       src: man/figures/card.png
@@ -26,10 +18,6 @@ template:
       creator: '@gongcastro'
       card: summary_large_image
 navbar:
-  bg: primary
-  base_color: white
-  body_color: black
-  heading_color: black
   structure:
     left:
     - intro
