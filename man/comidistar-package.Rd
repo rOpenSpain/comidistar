@@ -13,9 +13,9 @@ Base de datos documentada con las puntuaciones de las catas a ciegas de El Comid
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://gongcastro.github.io/comidistar/}
-  \item \url{https://github.com/gongcastro/comidistar/}
-  \item Report bugs at \url{https://github.com/gongcastro/comidistar/issues}
+  \item \url{https://ropensci.github.io/comidistar/}
+  \item \url{https://github.com/ropensci/comidistar/}
+  \item Report bugs at \url{https://github.com/ropensci/comidistar/issues}
 }
 
 }
