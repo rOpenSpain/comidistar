@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="comidistar es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación del paquete está disponible en este link, junto con algunas viñetas y tutoriales.">
+<meta name="description" content="Base de datos con las puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación del paquete está disponible en este link, junto con algunas viñetas y tutoriales.">
 <title>Una base de datos con las puntuaciones de las catas a ciegas de El Comidista. • comidistar</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -15,36 +15,42 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="deps/Roboto-0.4.5/font.css" rel="stylesheet">
+<link href="deps/Roboto_Mono-0.4.5/font.css" rel="stylesheet">
+<!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Una base de datos con las puntuaciones de las catas a ciegas de El Comidista.">
-<meta property="og:description" content="comidistar es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación del paquete está disponible en este link, junto con algunas viñetas y tutoriales.">
-<meta property="og:image" content="https://gongcastro.github.io/comidistar/reference/figures/card.png">
+<meta property="og:description" content="Base de datos con las puntuaciones de las catas a ciegas de El Comidista. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de YouTube de El Comidista. La documentación del paquete está disponible en este link, junto con algunas viñetas y tutoriales.">
+<meta property="og:image" content="https://ropenspain.github.io/comidistar/reference/figures/card.png">
 <meta property="og:image:alt" content="comidistar: Una base de datos con las puntuaciones de las catas a ciegas de El Comidista.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@gongcastro">
-<meta name="twitter:site" content="@gongcastro">
+<meta name="twitter:site" content="@rOpenSpain">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+<![endif]--><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+<!-- rogtemplate style sheet --><link href="BS5/rostemplate.css" rel="stylesheet">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Ir al contenido</a>
     
 
-    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary"><div class="container">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
     
-    <a class="navbar-brand me-2" href="index.html">comidistar</a>
+    <div>
+      <img src="logo.png" alt="comidistar-logo" id="ROS-navbar-logo"><a class="navbar-brand me-2" href="index.html">comidistar</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
-
+      <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
+    </div>
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Cambiar la navegación">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-3">
+    <div id="navbar" class="collapse navbar-collapse ms-2">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
   <a class="nav-link" href="reference/index.html">Índice</a>
@@ -85,7 +91,7 @@
 <!-- badges: start -->
 
 <p><a href="https://codecov.io/gh/gongcastro/comidistar?branch=master" class="external-link"><img src="https://codecov.io/gh/gongcastro/comidistar/branch/master/graph/badge.svg" alt="Codecov test coverage"></a> <!-- badges: end --></p>
-<p><strong>comidistar</strong> es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de <a href="https://elcomidista.elpais.com/" class="external-link">El Comidista</a>. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de <a href="https://www.youtube.com/channel/UCoIJrrwXy_mlr1WkC4vaTnA" class="external-link">YouTube</a> de El Comidista. La documentación del paquete está disponible en este <a href="https://gongcastro.github.io/comidistar/">link</a>, junto con algunas viñetas y tutoriales.</p>
+<p><strong>comidistar</strong> es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de <a href="https://elcomidista.elpais.com/" class="external-link">El Comidista</a>. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de <a href="https://www.youtube.com/channel/UCoIJrrwXy_mlr1WkC4vaTnA" class="external-link">YouTube</a> de El Comidista. La documentación del paquete está disponible en este <a href="https://gongcastro.github.io/comidistar/" class="external-link">link</a>, junto con algunas viñetas y tutoriales.</p>
 <div class="section level2">
 <h2 id="instalación">Instalación<a class="anchor" aria-label="anchor" href="#instalaci%C3%B3n"></a>
 </h2>
@@ -100,7 +106,7 @@
 </h2>
 <p>Puedes cargar la base de datos como un <em>data frame</em> así:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gongcastro.github.io/comidistar/">comidistar</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gongcastro.github.io/comidistar/" class="external-link">comidistar</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"puntuaciones"</span><span class="op">)</span></span></code></pre></div>
 <p>En cada una de estas catas a ciegas de <strong>El Comidista</strong> (disponibles en su canal de <a href="https://www.youtube.com/channel/UCoIJrrwXy_mlr1WkC4vaTnA" class="external-link">YouTube</a>) se presenta una serie de productos de marcas industriales a una o dos personas expertas en ese tipo de productos. En los vídeos en los que hay más de una persona puntuando los productos, el equipo de edición asigna al producto la media de las puntuaciones. La base de datos <code>puntuaciones</code> muestra las puntuaciones de cada persona del jurado de forma individual. Ver <code><a href="reference/puntuaciones.html">?puntuaciones</a></code> para más información sobre esta base de datos.</p>
 </div>
@@ -156,23 +162,61 @@
   </aside>
 </div>
 
-
-    <footer><div class="pkgdown-footer-left">
-  <p></p>
-<p>Desarrollado por <a href="http://gongcastro.github.io" class="external-link">Gonzalo Garcia-Castro<br><img src="reference/figures/profile.png" width="45"></a>.</p>
+<script>
+  var homeall = document.getElementsByTagName("h1");
+  var banner = document.createElement('div');
+  banner.innerHTML = '<a href="https://ropenspain.es/" id="ROS-heading-breadcrumbs">' +
+        '<div class="text-center" id="ROS-partof">' +
+          '<p>Part of <img src="ROS-logo.png" alt="rOpenSpain-Logo" id="homelogoxs"> rOpenSpain </p>' +
+        '</div></a>'
+  if (homeall.length > 0) {
+	  home = homeall[0];
+	  home.insertBefore(banner,home.firstChild);
+  }
+</script>
 </div>
 
-<div class="pkgdown-footer-right">
-  <p></p>
-<p>Sitio creado con <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+  <!-- ropenspain rostemplate -->
+<footer id="footer"><div class="container">
+    <div class="row">
+      <div class="col-md">
+        <h4 data-toc-skip>About <img src="logo.png" alt="comidistar Logo" height="24"> comidistar</h4>
+        <p>Desarrollado por <a href="http://gongcastro.github.io" class="external-link">Gonzalo Garcia-Castro<br><img src="reference/figures/profile.png" width="45"></a>.</p>
+        <p>Part of the <span class="ROS-light">rOpenSpain</span> project.</p>
+        <hr class="d-md-none">
+</div>
+      <div class="col-md offset-md-4">
+        <h4 data-toc-skip>About <img src="ROS-logo.png" alt="ROpenSpain Logo" height="24"><span class="ROS-light"> rOpenSpain</span>
+</h4>
+        <a href="https://ropenspain.es/" class="external-link"><span class="ROS-light">rOpenSpain</span></a> is a community of R enthusiasts whose ultimate goal is to create high-quality R packages for data mining public Spanish open sources.
+        <hr class="d-md-none">
+</div>
+   </div>
+  </div>
+</footer><div id="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md text-center text-lg-start">
+        <p>Sitio creado con <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+      </div>
+      <div class="col-md offset-md-4 text-center text-lg-start">
+      <p>Template <a href="https://github.com/ropenspain/rostemplate/" class="external-link">rostemplate</a> by <a href="https://github.com/dieghernan/" class="external-link">dieghernan</a>, based on <a href="https://bootstrapious.com/" class="external-link">Bootstrapious</a>.
+      </p>
+      </div>
+    </div>
+  </div>
 </div>
 
-    </footer>
-</div>
 
   
 
-  
-
-  </body>
+  <script>
+var h1s = document.getElementsByTagName("h1");
+var myH1;
+if (h1s.length > 0) {
+  myH1 = h1s[0];
+  myH1.classList.add("ROSh1");
+}
+</script>
+</body>
 </html>
