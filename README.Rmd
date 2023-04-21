@@ -26,12 +26,17 @@ knitr::opts_chunk$set(
 
 ## Instalación
 
-Puedes instalar comidistar ejecutando el siguiente código:
+Puedes instalar comidistar desde [r-universe](https://ropenspain.r-universe.dev/comidistar) ejecutando el siguiente código:
 
 ```r
-# podrías necesitar instalar el paquete devtools primero
-# install.packages("devtools")
-devtools::install_github("gongcastro/comidistar")
+install.packages("comidistar", repos = c("https://ropenspain.r-universe.dev"))
+```
+
+También puedes instalarlo desde su repositorio de [GitHub](https://github.com/ropenspain/comidistar):
+
+```r
+# podrías necesitar instalar el paquete {remotes} primero
+remotes::install_github("gongcastro/comidistar")
 ```
 
 ## Ejemplo

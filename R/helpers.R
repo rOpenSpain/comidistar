@@ -13,7 +13,7 @@ theme_comidistar <- function(){
         panel.grid.major.y = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.minor.y = element_blank(),
-        axis.line = element_line(colour = "#27521E", size = 0.75),
+        axis.line = element_line(colour = "#27521E", linewidth = 0.75),
         axis.ticks = element_line(colour = "#27521E"),
         axis.title.x = element_text(size = 14, colour = "#27521E", face = "bold"),
         axis.title.y = element_text(size = 14, colour = "#27521E", face = "bold"),
