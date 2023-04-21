@@ -90,7 +90,6 @@
 </div>
 <!-- badges: start -->
 
-<p><a href="https://codecov.io/gh/gongcastro/comidistar?branch=master" class="external-link"><img src="https://codecov.io/gh/gongcastro/comidistar/branch/master/graph/badge.svg" alt="Codecov test coverage"></a> <!-- badges: end --></p>
 <p><strong>comidistar</strong> es un paquete de R que contiene una base de datos con las puntuaciones de las catas a ciegas de <a href="https://elcomidista.elpais.com/" class="external-link">El Comidista</a>. También contiene algunas funciones para trabajar con los datos y visualizarlos más fácilmente. Las puntuaciones y datos adicionales sobre los productos de las catas fueron transcritos manualmente a partir de los vídeos subidos al canal de <a href="https://www.youtube.com/channel/UCoIJrrwXy_mlr1WkC4vaTnA" class="external-link">YouTube</a> de El Comidista. La documentación del paquete está disponible en este <a href="https://gongcastro.github.io/comidistar/" class="external-link">link</a>, junto con algunas viñetas y tutoriales.</p>
 <div class="section level2">
 <h2 id="instalación">Instalación<a class="anchor" aria-label="anchor" href="#instalaci%C3%B3n"></a>
@@ -107,6 +106,7 @@
 <p>Puedes cargar la base de datos como un <em>data frame</em> así:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ropenspain.github.io/comidistar/">comidistar</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning: package 'comidistar' was built under R version 4.2.3</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"puntuaciones"</span><span class="op">)</span></span></code></pre></div>
 <p>En cada una de estas catas a ciegas de <strong>El Comidista</strong> (disponibles en su canal de <a href="https://www.youtube.com/channel/UCoIJrrwXy_mlr1WkC4vaTnA" class="external-link">YouTube</a>) se presenta una serie de productos de marcas industriales a una o dos personas expertas en ese tipo de productos. En los vídeos en los que hay más de una persona puntuando los productos, el equipo de edición asigna al producto la media de las puntuaciones. La base de datos <code>puntuaciones</code> muestra las puntuaciones de cada persona del jurado de forma individual. Ver <code><a href="reference/puntuaciones.html">?puntuaciones</a></code> para más información sobre esta base de datos.</p>
 </div>
@@ -156,6 +156,7 @@
 <ul class="list-unstyled">
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
 <li><a href="https://github.com/gongcastro/comidistar/actions" class="external-link"><img src="https://github.com/gongcastro/comidistar/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://codecov.io/gh/gongcastro/comidistar?branch=master" class="external-link"><img src="https://codecov.io/gh/ropenspain/comidistar/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 
