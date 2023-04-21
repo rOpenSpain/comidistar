@@ -1,4 +1,4 @@
-git checko---
+---
 output: github_document
 ---
 
@@ -18,8 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/gongcastro/comidistar/workflows/R-CMD-check/badge.svg)](https://github.com/gongcastro/comidistar/actions)
-![GitHub](https://img.shields.io/github/license/gongcastro/comidistar)
-[![Codecov test coverage](https://codecov.io/gh/gongcastro/comidistar/branch/master/graph/badge.svg)](https://codecov.io/gh/gongcastro/comidistar?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/ropenspain/comidistar/branch/master/graph/badge.svg)](https://codecov.io/gh/gongcastro/comidistar?branch=master)
 ![r-universe](https://ropenspain.r-universe.dev/badges/comidistar)
 <!-- badges: end -->
 
