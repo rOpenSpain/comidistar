@@ -8,28 +8,9 @@
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/gongcastro/comidistar/workflows/R-CMD-check/badge.svg)](https://github.com/gongcastro/comidistar/actions)
-![GitHub top
-language](https://img.shields.io/github/languages/top/gongcastro/comidistar)
-![GitHub repo
-size](https://img.shields.io/github/repo-size/gongcastro/comidistar)
-![GitHub
-issues](https://img.shields.io/github/issues/gongcastro/comidistar)
-![GitHub closed
-issues](https://img.shields.io/github/issues-closed/gongcastro/comidistar)
-![GitHub pull
-requests](https://img.shields.io/github/issues-pr/gongcastro/comidistar)
-![GitHub closed pull
-requests](https://img.shields.io/github/issues-pr-closed/gongcastro/comidistar)
-![GitHub](https://img.shields.io/github/license/gongcastro/comidistar)
-![GitHub R package
-version](https://img.shields.io/github/r-package/v/gongcastro/comidistar)
-![GitHub
-contributors](https://img.shields.io/github/contributors/gongcastro/comidistar)
-![GitHub last
-commit](https://img.shields.io/github/last-commit/gongcastro/comidistar)
-
 [![Codecov test
-coverage](https://codecov.io/gh/gongcastro/comidistar/branch/master/graph/badge.svg)](https://codecov.io/gh/gongcastro/comidistar?branch=master)
+coverage](https://codecov.io/gh/ropenspain/comidistar/branch/master/graph/badge.svg)](https://codecov.io/gh/gongcastro/comidistar?branch=master)
+![r-universe](https://ropenspain.r-universe.dev/badges/comidistar)
 <!-- badges: end -->
 
 **comidistar** es un paquete de R que contiene una base de datos con las
@@ -59,6 +40,7 @@ Puedes cargar la base de datos como un *data frame* así:
 
 ``` r
 library(comidistar)
+#> Warning: package 'comidistar' was built under R version 4.2.3
 data("puntuaciones")
 ```
 
