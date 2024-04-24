@@ -8,6 +8,7 @@ home:
     del paquete está disponible en este link, junto con algunas viñetas y tutoriales.
 lang: es
 template:
+  bootstrap: 5
   package: rostemplate
   opengraph:
     image:
